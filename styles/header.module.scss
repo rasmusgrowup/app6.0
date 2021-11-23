@@ -1,0 +1,72 @@
+@import './sizes.scss';
+
+.mainHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  mix-blend-mode: difference;
+  padding: 0 6vw;
+  position: absolute;
+  top: 4vw;
+  width: 100%;
+  z-index: 99;
+
+  @media only screen and (max-width: $sm) {
+    padding: 0 2vw;
+    top: 4vh;
+  }
+}
+
+.navContainer {
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  align-items: flex-start;
+  display: flex;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1;
+
+  .logoType {
+    margin-right: 3px;
+  }
+}
+
+.navLink {
+  color: var(--white);
+  font-size: 1em;
+  margin-right: 1.5rem;
+
+  @media only screen and (max-width: $sm) {
+    display: none;
+  }
+}
+
+.menuActivator {
+  align-items: flex-end;
+  border-radius: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 2rem;
+
+  span {
+    background-color: var(--white);
+    display: block;
+    height: 2px;
+    margin: 0.12rem 0;
+    width: 2rem;
+
+    &:last-of-type {
+      width: 1rem;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

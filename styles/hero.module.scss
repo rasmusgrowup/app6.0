@@ -1,0 +1,134 @@
+@import './sizes.scss';
+
+.heroSection {
+  background-color: var(--black);
+  padding: 7rem 2vw 3.5rem;
+  position: relative;
+  z-index: 2;
+
+  @media only screen and (min-width: $m) {
+    padding: 14vw 6vw 6vw;
+  }
+}
+
+.heading {
+  color: var(--white);
+  display: inline-block;
+  font-size: clamp(40px, 6vw, 8rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0;
+
+  span {
+    align-items: center;
+    display: flex;
+    margin-top: -12px;
+    padding-bottom: 9px;
+
+    @media only screen and (max-width: $sm) {
+      margin-top: -6px;
+    }
+
+    .arrow {
+      align-items: center;
+      display: flex;
+      height: 2rem;
+      margin: 0 1rem;
+      width: 3rem;
+
+      @media only screen and (max-width: $sm) {
+        margin: 0 0.5rem;
+        width: 2rem;
+      }
+    }
+
+    .since {
+      align-self: flex-start;
+      font-size: 0.25em;
+      font-weight: 400;
+      letter-spacing: normal;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.aside {
+  float: right;
+  margin-top: 0.5rem;
+
+  @media only screen and (max-width: $sm) {
+    float: none;
+    margin-top: 2rem;
+  }
+}
+
+.text {
+  color: var(--white);
+  font-size: 1.1em;
+  font-weight: 400;
+  max-width: 100vw;
+  vertical-align: top;
+  width: 345px;
+}
+
+.contact {
+  color: var(--white);
+  list-style-type: none;
+  margin-top: 2rem;
+  padding: 0;
+
+  .mail {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    padding-bottom: 2px;
+    position: relative;
+
+    &::after {
+      bottom: 0;
+      border-bottom: 1px solid var(--white);
+      content: '';
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      margin-right: 0.25rem;
+    }
+  }
+}
+
+.scrollSection {
+  overflow: hidden;
+  margin-left: -6vw;
+  width: 100vw;
+
+  @media only screen and (max-width: $sm) {
+    margin-left: -2vw;
+  }
+
+  .scrollInner {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(8, 30%);
+    margin-left: -6vw;
+    margin-top: 8rem;
+
+    @media only screen and (max-width: $sm) {
+      grid-template-columns: repeat(8, 50%);
+      margin-left: -2vw;
+      margin-top: 4rem;
+    }
+
+    .scrollItem {
+      margin-left: 6vw;
+    }
+  }
+}
