@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="60.762" height="60.14" viewBox="0 0 60.762 60.14">
   <g id="Icon_feather-arrow-up-right" data-name="Icon feather-arrow-up-right" transform="translate(35.677 7.107) rotate(45)">
-    <path id="Path_2" data-name="Path 2" d="M-7.929,40.4,32.475,0" transform="translate(0 0)" fill="none" stroke="#f0efea" stroke-linejoin="round" stroke-width="3"/>
-    <path id="Path_3" data-name="Path 3" d="M0,0H20.672V20.672" transform="translate(11.803 0)" fill="none" stroke="#f0efea" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_2" data-name="Path 2" d="M-7.929,40.4,32.475,0" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_3" data-name="Path 3" d="M0,0H20.672V20.672" transform="translate(11.803 0)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
   </g>
 </svg>

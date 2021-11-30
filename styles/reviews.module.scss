@@ -1,0 +1,117 @@
+@import './sizes.scss';
+
+.reviewsSection {
+  background-color: var(--white);
+  min-height: 100vh;
+  padding: 5rem 4vw 50rem;
+  position: relative;
+
+  @media only screen and (min-width: $m) {
+    padding: 20vw 6vw 40vw;
+  }
+}
+
+.reviewWrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 7vw;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 980px;
+  position: relative;
+
+  @media only screen and (max-width: $sm) {
+    height: 16vw;
+  }
+}
+
+.line {
+  display: block;
+  background-color: var(--black);
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 18rem;
+  width: 1rem;
+
+  @media only screen and (max-width: $sm) {
+    top: 7rem;
+    width: 0.5rem;
+  }
+}
+
+.reviewReference {
+  align-items: flex-start;
+  color: var(--white);
+  display: flex;
+  font-size: clamp(32px, 6vw, 10rem);
+  font-weight: 600;
+  line-height: 1.1;
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 2;
+
+  .referenceName {
+    color: color;
+    clip-path: inset(0 100% 0 0);
+    position: relative;
+    transition: clip-path 1s .1s var(--ease);
+  }
+
+  .referenceYear {
+    color: #0f0f0f;
+    font-size: 0.2em;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    transition: color 1s 0.1s var(--ease);
+
+    @media only screen and (max-width: $sm) {
+      font-size: 0.3em;
+    }
+  }
+
+  &::before {
+    color: #0f0f0f;
+    content: attr(data-text);
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.reviewImage {
+  clip-path: inset(0 0 100% 0);
+  right: 0;
+  position: fixed;
+  top: 50%;
+  transform: translate(calc((100vw - 980px) / -2), -50%);
+  transition: all 1s 0.1s var(--ease);
+  opacity: 0;
+  width: auto;
+  z-index: 1;
+
+  @media only screen and (max-width: $sm) {
+    transform: translate(0, -50%);
+    top: 50%;
+    width: 70%;
+  }
+}
+
+.insetAnimation {
+  .referenceName {
+    clip-path: inset(0 0% 0 0);
+    transition: clip-path 1s 0.1s var(--ease);
+  }
+
+  .referenceYear {
+    color: white;
+    transition: color 1s 0.1s var(--ease);
+  }
+
+  .reviewImage {
+    clip-path: inset(0 0 0 0%);
+    transition: all 1s 0.1s var(--ease);
+    opacity: 1;
+  }
+}

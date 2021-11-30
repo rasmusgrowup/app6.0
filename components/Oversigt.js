@@ -12,21 +12,22 @@ export default function Oversigt() {
   const oversigtInner = useRef();
 
   useEffect(() => {
-    gsap.set(oversigtSection.current, {
-      yPercent: -100,
-    })
-
-    gsap.to(oversigtSection.current, {
+    gsap.set(oversigtInner.current, { y: 0, yPercent: -40 })
+    const animation = gsap.to(oversigtInner.current, {
+      yPercent: 0,
+      y: 0,
       ease: 'none',
       scrollTrigger: {
         trigger: oversigtSection.current,
-        start: 'top top',
-        end: 'bottom top',
+        start: 'top bottom',
+        end: 'center center',
         scrub: true,
-        pin: true,
-        pinSpacing: false,
       }
     })
+
+    return () => {
+      animation.scrollTrigger.kill();
+    }
   }, [])
 
   return (
@@ -89,8 +90,8 @@ export default function Oversigt() {
               <Link href='/'>
                 <a className={css.sixthLink}>
                   <div className={css.linkItem}>
-                    <span className={css.linkNumber}>06.</span>
-                    Kontakt
+                    <span className={css.linkNumber}>( eller )</span>
+                    Kontakt os
                   </div>
                 </a>
               </Link>

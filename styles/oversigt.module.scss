@@ -1,7 +1,10 @@
 @import './sizes.scss';
 
 .oversigtSection {
+  align-items: center;
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
   padding: 6rem 2vw;
   position: relative;
@@ -12,20 +15,22 @@
 }
 
 .oversigtInner {
-  left: 50%;
-  max-width: 600px;
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 50vw;
   width: calc(100vw - 8vw);
   z-index: 1;
+
+  @media (max-width:$sm) {
+    max-width: none;
+  }
 }
 
 .oversigtTitle {
-  font-family: freight-display-pro, serif;
-  font-weight: 400;
+  font-family: ivypresto-display, serif;
+  font-size: clamp(21px, 2vw, 40px);
   font-style: normal;
+  font-weight: 300;
   margin: 0;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -35,19 +40,38 @@
   padding: 0;
 
   .listItem {
-    font-size: clamp(42px, 5vw, 100px);
+    font-size: clamp(36px, 5vw, 100px);
     font-weight: 600;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
 
     a {
       display: block;
       line-height: 1;
     }
+
+
+    .linkItem {
+      align-items: flex-start;
+      display: flex;
+      line-height: 1;
+    }
+
+    .linkNumber {
+      font-size: 0.25em;
+      font-weight: 500;
+      margin-top: 8px;
+      margin-right: 8px;
+    }
   }
 }
 
+.firstLink {
+  margin-left: 10%;
+}
+
 .secondLink {
-  margin-left: 15%;
+  margin-left: 20%;
 }
 
 .thirdLink {
@@ -59,22 +83,9 @@
 }
 
 .fifthLink {
-  margin-left: 25%;
+  margin-left: 0;
 }
 
 .sixthLink {
-  margin-left: 5%;
-}
-
-.linkItem {
-  align-items: flex-start;
-  display: flex;
-  line-height: 1;
-}
-
-.linkNumber {
-  font-size: 0.2em;
-  font-weight: 500;
-  margin-top: 8px;
-  margin-right: 8px;
+  margin-left: 20%;
 }

@@ -1,66 +1,55 @@
 @import './sizes.scss';
 
 .heroSection {
-  background-color: var(--black);
-  padding: 7rem 2vw 3.5rem;
+  background-color: var(--dark);
+  min-height: 100vh;
+  padding: 7rem 4vw 2rem;
   position: relative;
   z-index: 2;
+  width: 100%;
 
   @media only screen and (min-width: $m) {
     padding: 14vw 6vw 6vw;
   }
 }
 
+.heroTop {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $sm) {
+    display: block;
+  }
+}
+
 .heading {
   color: var(--white);
   display: inline-block;
-  font-size: clamp(40px, 6vw, 8rem);
+  font-size: clamp(32px, 4.2vw, 8rem);
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
   margin: 0;
+  margin-right: 8vw;
+  width: 66%;
 
-  span {
-    align-items: center;
-    display: flex;
-    margin-top: -12px;
-    padding-bottom: 9px;
-
-    @media only screen and (max-width: $sm) {
-      margin-top: -6px;
-    }
-
-    .arrow {
-      align-items: center;
-      display: flex;
-      height: 2rem;
-      margin: 0 1rem;
-      width: 3rem;
-
-      @media only screen and (max-width: $sm) {
-        margin: 0 0.5rem;
-        width: 2rem;
-      }
-    }
-
-    .since {
-      align-self: flex-start;
-      font-size: 0.25em;
-      font-weight: 400;
-      letter-spacing: normal;
-      margin-left: 0.5rem;
-      margin-top: 0.5rem;
-    }
+  @media only screen and (max-width: $sm) {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    max-width: none;
+    width: 100%;
   }
 }
 
 .aside {
-  float: right;
-  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 34%;
 
   @media only screen and (max-width: $sm) {
-    float: none;
-    margin-top: 2rem;
+    width: 100%;
   }
 }
 
@@ -68,30 +57,45 @@
   color: var(--white);
   font-size: 1.1em;
   font-weight: 400;
+  line-height: 1.5;
   max-width: 100vw;
   vertical-align: top;
-  width: 345px;
 }
 
 .contact {
-  color: var(--white);
+  align-items: center;
+  display: flex;
   list-style-type: none;
+  justify-content: space-between;
+  margin-bottom: 0;
   margin-top: 2rem;
   padding: 0;
 
   .mail {
-    font-size: 1.2em;
-    margin-bottom: 0.5rem;
-    padding-bottom: 2px;
+    background-color: var(--white);
+    border-radius: 25vw;
+    display: inline-block;
+    font-size: clamp(14px, 1.25vw, 36px);
+    line-height: 1;
+    margin-right: 1rem;
+    padding: 1vw 2vw;
     position: relative;
+    text-align: center;
+    width: 60%;
 
-    &::after {
-      bottom: 0;
-      border-bottom: 1px solid var(--white);
-      content: '';
-      left: 0;
-      position: absolute;
-      width: 100%;
+    @media only screen and (max-width: $sm) {
+      padding: 4vw;
+    }
+  }
+
+  .icon {
+    display: block;
+    height: 2vw;
+    width: 2vw;
+
+    @media only screen and (max-width: $sm) {
+      height: 6vw;
+      width: 6vw;
     }
   }
 
@@ -105,30 +109,75 @@
   }
 }
 
-.scrollSection {
-  overflow: hidden;
-  margin-left: -6vw;
-  width: 100vw;
+.heroBottom {
+  align-items: stretch;
+  display: flex;
+  height: 75vw;
+  margin: 10vw auto 0;
+  position: relative;
+  width: 100%;
 
   @media only screen and (max-width: $sm) {
-    margin-left: -2vw;
+    height: 114vw;
+    margin: 3rem auto 0;
   }
+}
 
-  .scrollInner {
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(8, 30%);
-    margin-left: -6vw;
-    margin-top: 8rem;
+.columnItem {
+  background-color: var(--dark);
+  height: 100%;
+  flex: 1;
+  margin-bottom: 1vw;
+  position: relative;
 
-    @media only screen and (max-width: $sm) {
-      grid-template-columns: repeat(8, 50%);
-      margin-left: -2vw;
-      margin-top: 4rem;
-    }
+  @media only screen and (max-width: $sm) {
+    margin-bottom: 2vw;
+  }
+}
 
-    .scrollItem {
-      margin-left: 6vw;
-    }
+.columnOne,
+.columnTwo,
+.columnThree,
+.columnFour {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 1vw;
+
+  @media only screen and (max-width: $sm) {
+    margin-right: 2vw;
+  }
+}
+
+@media only screen and (max-width: $sm) {
+  .columnThree {
+    margin-right: 0;
+  }
+}
+
+.columnFour {
+  margin-right: 0;
+
+  @media only screen and (max-width: $sm) {
+    display: none;
+  }
+}
+
+.columnOne {
+  [data-number='3'] {
+    flex: 0.75
+  }
+}
+
+.columnThree {
+  [data-number='2'] {
+    flex: 0.5
+  }
+}
+
+.columnTwo,
+.columnFour {
+  [data-number='2'] {
+    flex: 1.5;
   }
 }
