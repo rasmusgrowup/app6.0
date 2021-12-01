@@ -6,15 +6,15 @@
   justify-content: space-between;
   left: 0;
   mix-blend-mode: difference;
-  padding: 0 6vw;
+  padding: 0 4vw;
   position: absolute;
   top: 4vw;
   width: 100%;
   z-index: 99;
 
   @media only screen and (max-width: $sm) {
-    padding: 0 4vw;
-    top: 4vh;
+    padding: 0 3vw;
+    top: 1rem;
   }
 }
 
@@ -26,8 +26,8 @@
 .logo {
   align-items: flex-start;
   display: flex;
-  color: var(--white);
-  font-size: clamp(21px, 2vw, 42px);
+  color: var(--light);
+  font-size: clamp(21px, 1.75vw, 42px);
   font-weight: 600;
   line-height: 1;
 
@@ -41,9 +41,9 @@
 }
 
 .navLink {
-  color: var(--white);
+  color: var(--light);
   font-size: clamp(14px, 1.25vw, 36px);
-  margin-right: 3.5vw;
+  margin-right: 2rem;
 
   @media only screen and (max-width: $sm) {
     display: none;
@@ -67,14 +67,27 @@
   width: 3vw;
 
   span {
-    background-color: var(--white);
+    background-color: var(--light);
     display: block;
-    height: 0.3vw;
+    height: 0.5vw;
     margin: 0.1vw 0;
     width: 3vw;
 
     &:last-of-type {
       width: 1.5vw;
+    }
+  }
+
+  @media (max-width: $sm) {
+    width: 10vw;
+
+    span {
+      height: 2vw;
+      width: 10vw;
+
+      &:last-of-type {
+        width: 5vw;
+      }
     }
   }
 
@@ -85,9 +98,9 @@
 
 .menuButton {
   background-color: var(--dark);
-  border: 1px solid var(--white);
+  border: 1px solid var(--light);
   border-radius: 25vw;
-  color: var(--white);
+  color: var(--light);
   cursor: pointer;
   display: inline-block;
   font-size: clamp(14px, 1vw, 36px);

@@ -1,0 +1,29 @@
+@import './sizes.scss';
+
+.shopifySection {
+  background-color: var(--grey);
+  padding: 10vw 0;
+}
+
+.screenShotWrapper {
+  align-items: stretch;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  height: calc(1024px * 0.49);
+  position: relative;
+  width: 100%;
+}
+
+.screenShot {
+  flex: 3;
+  height: 100%;
+  margin-right: 0.5vw;
+  position: relative;
+}
+
+.screenPlay {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}

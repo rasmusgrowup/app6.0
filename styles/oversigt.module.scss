@@ -19,7 +19,7 @@
   width: calc(100vw - 8vw);
   z-index: 1;
 
-  @media (max-width:$sm) {
+  @media (max-width: $sm) {
     max-width: none;
   }
 }
@@ -50,7 +50,6 @@
       line-height: 1;
     }
 
-
     .linkItem {
       align-items: flex-start;
       display: flex;
@@ -62,6 +61,7 @@
       font-weight: 500;
       margin-top: 8px;
       margin-right: 8px;
+      text-transform: lowercase;
     }
   }
 }

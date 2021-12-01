@@ -39,13 +39,13 @@ export default function Footer() {
             <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Invitér os ud</a></Link>
           </div>
           <div className={css.address}>
-            ( eller besøg os på Havnegade 100L, Odense C, 5000 )
+            eller besøg os på Havnegade 100L, Odense C 5000
           </div>
         </div>
         <div className={css.footerBottom}>
           <p className={css.first}>CO2 kompenseret hjemmeside</p>
-          <p className={css.second}>© 2021 Growup Aps</p>
-          <p className={css.third}>Cookie-frit website</p>
+          <p className={css.second}>Cookie-frit website</p>
+          <p className={css.third}>© 2021 Growup Aps</p>
         </div>
       </footer>
     </>

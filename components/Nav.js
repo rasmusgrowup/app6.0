@@ -9,7 +9,10 @@ export default function Nav() {
     <>
       <nav className={css.navContainer}>
         <Link href='/'>
-          <a className={router.pathname == '/' ? `${css.navLink} ${css.activeNavLink}` : `${css.navLink}`}>Intro</a>
+          <a className={router.pathname == '/' ? `${css.navLink} ${css.activeNavLink}` : `${css.navLink}`}>Om os</a>
+        </Link>
+        <Link href='/'>
+          <a className={css.navLink}>Priser</a>
         </Link>
         <Link href='/'>
           <a className={css.navLink}>Løsninger</a>
@@ -17,11 +20,11 @@ export default function Nav() {
         <Link href='/'>
           <a className={css.navLink}>Cases</a>
         </Link>
-        <div className={css.menuActivator} style={{ display: 'none' }}>
+        <div className={css.menuActivator}>
           <span></span>
           <span></span>
         </div>
-        <div className={css.menuButton}>Menu</div>
+        <div className={css.menuButton} style={{ display: 'none' }}>Menu</div>
       </nav>
     </>
   )

@@ -1,20 +1,47 @@
 import Hero from '../components/Hero'
 import Oversigt from '../components/Oversigt'
+import Logo from '../components/Logo'
+import Shopify from '../components/Shopify'
+import css from '../styles/intro.module.scss'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
-
-import css from '../styles/hero.module.scss'
-import Link from 'next/link'
-import Image from 'next/image'
-import Arrow from '../public/link.svg'
 
 export default function Home() {
+  const [animateIntro, setAnimateIntro] = useState(true);
+  const introWrapper = useRef(null);
+  const tl = gsap.timeline({ defaults: { ease: 'Power3.easeInOut' }});
+
+  useEffect (() => {
+    if (window.sessionStorage.getItem("firstLoadDone") === null) {
+      setAnimateIntro(true);
+      window.sessionStorage.setItem("firstLoadDone", 1)
+
+      gsap.set(introWrapper.current, {
+        clipPath: 'inset(0 0 0% 0)',
+      })
+
+      tl
+        .to(introWrapper.current, {
+        duration: 2,
+        delay: 2,
+        clipPath: 'inset(0 0 100% 0)',
+        })
+        .set(introWrapper.current, {
+          display: 'none',
+        });
+    } else {
+      setAnimateIntro(false);
+    }
+  }, [])
 
   return (
     <>
+      <div className={`${css.introWrapper} ${animateIntro ? '' : css.introAnimationPlayed}`} ref={introWrapper}>
+        <div className={css.introLogo}>
+          Please, never grow up
+        </div>
+      </div>
       <Hero />
       <Oversigt />
     </>

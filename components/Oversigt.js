@@ -12,7 +12,7 @@ export default function Oversigt() {
   const oversigtInner = useRef();
 
   useEffect(() => {
-    gsap.set(oversigtInner.current, { y: 0, yPercent: -40 })
+    gsap.set(oversigtInner.current, { y: 0, yPercent: -75 })
     const animation = gsap.to(oversigtInner.current, {
       yPercent: 0,
       y: 0,
@@ -76,7 +76,7 @@ export default function Oversigt() {
                 </a>
               </Link>
             </li>
-            <li className={css.listItem}>
+            <li className={css.listItem} style={{ display: 'none' }}>
               <Link href='/'>
                 <a className={css.fifthLink}>
                   <div className={css.linkItem}>
@@ -90,7 +90,7 @@ export default function Oversigt() {
               <Link href='/'>
                 <a className={css.sixthLink}>
                   <div className={css.linkItem}>
-                    <span className={css.linkNumber}>( eller )</span>
+                    <span className={css.linkNumber}>eller</span>
                     Kontakt os
                   </div>
                 </a>
