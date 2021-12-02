@@ -86,7 +86,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='bottom'
                 quality='100'
-                placeholder='blur'
               />
             </div>
             <div className={css.columnItem} data-number='3' data-sort='03.'>
@@ -111,7 +110,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='center'
                 quality='100'
-                placeholder='blur'
                 priority='true'
               />
             </div>
@@ -122,7 +120,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='center'
                 quality='100'
-                placeholder='blur'
               />
             </div>
             <div className={css.columnItem} data-number='3' data-sort='06.'>
@@ -132,7 +129,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='left'
                 quality='100'
-                placeholder='blur'
               />
             </div>
             <div className={css.columnItem} data-number='4' data-sort='07.'>
@@ -142,7 +138,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='center'
                 quality='100'
-                placeholder='blur'
               />
             </div>
           </div>
@@ -154,7 +149,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='top'
                 quality='100'
-                placeholder='blur'
                 priority='true'
               />
             </div>
@@ -165,7 +159,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='center'
                 quality='100'
-                placeholder='blur'
               />
             </div>
             <div className={css.columnItem} data-number='3' data-sort='10.'>
@@ -175,7 +168,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='top'
                 quality='100'
-                placeholder='blur'
               />
             </div>
           </div>
@@ -200,7 +192,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='top'
                 quality='100'
-                placeholder='blur'
               />
             </div>
             <div className={css.columnItem} data-number='3' data-sort='13.'>
@@ -210,7 +201,6 @@ export default function Hero(props) {
                 objectFit='cover'
                 objectPosition='top'
                 quality='100'
-                placeholder='blur'
               />
             </div>
           </div>
