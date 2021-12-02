@@ -25,8 +25,8 @@ import Os from '../public/os_bw.jpg'
 import OsBw from '../public/os_2.jpg'
 
 import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,14 +70,17 @@ export default function Hero(props) {
         <div className={css.heroMiddle}>
           <div className={css.columnOne}>
             <div className={css.columnItem} data-number='1' data-sort='01.'>
-              <Image
-                src={TinekhomeGif}
-                layout='fill'
-                objectFit='cover'
-                objectPosition='top'
-                quality='100'
-                priority='true'
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                width='100%'
+                height='100%'
+                style={{ objectFit: 'cover' }}
+                >
+                <source src={'/TinekhomeVideoPlaid.mp4'} type='video/mp4' />
+              </video>
             </div>
             <div className={css.columnItem} data-number='2' data-sort='02.'>
               <Image
@@ -90,13 +93,17 @@ export default function Hero(props) {
               />
             </div>
             <div className={css.columnItem} data-number='3' data-sort='03.'>
-              <Image
-                src={OrganicGif}
-                layout='fill'
-                objectFit='cover'
-                objectPosition='bottom'
-                quality='100'
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                width='100%'
+                height='100%'
+                style={{ objectFit: 'cover' }}
+                >
+                <source src={'/OrganicInstaPost.mp4'} type='video/mp4' />
+              </video>
             </div>
           </div>
           <div className={css.columnTwo}>
@@ -177,14 +184,17 @@ export default function Hero(props) {
           </div>
           <div className={css.columnFour}>
             <div className={css.columnItem} data-number='1' data-sort='11.'>
-              <Image
-                src={ByMickleitGif}
-                layout='fill'
-                objectFit='cover'
-                objectPosition='center'
-                quality='100'
-                priority='true'
-              />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                width='100%'
+                height='100%'
+                style={{ objectFit: 'cover' }}
+                >
+                <source src={'/ByMickleitVideo.mp4'} type='video/mp4' />
+              </video>
             </div>
             <div className={css.columnItem} data-number='2' data-sort='12.'>
               <Image

@@ -12,7 +12,7 @@ export default function Oversigt() {
   const oversigtInner = useRef();
 
   useEffect(() => {
-    gsap.set(oversigtInner.current, { y: 0, yPercent: -75 })
+    gsap.set(oversigtInner.current, { y: 0, yPercent: -75, willChange: 'transform' })
     const animation = gsap.to(oversigtInner.current, {
       yPercent: 0,
       y: 0,
