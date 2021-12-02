@@ -1,7 +1,6 @@
 import Hero from '../components/Hero'
 import Oversigt from '../components/Oversigt'
 import Logo from '../components/Logo'
-import Shopify from '../components/Shopify'
 import css from '../styles/intro.module.scss'
 
 import { useEffect, useRef, useState } from 'react'
