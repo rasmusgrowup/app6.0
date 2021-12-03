@@ -119,14 +119,13 @@
 .heroMiddle {
   align-items: stretch;
   display: flex;
-  height: 84vw;
   margin: 0 auto;
   margin-top: 6vw;
   position: relative;
   width: 100%;
 
   @media only screen and (max-width: $sm) {
-    height: 114vw;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 3rem;
   }
@@ -169,10 +168,14 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  height: 84vw;
   margin-right: 0.5vw;
 
   @media only screen and (max-width: $sm) {
+    flex: initial;
+    height: 152vw;
     margin-right: 1vw;
+    width: calc(50% - 0.5vw);
   }
 }
 
@@ -193,8 +196,8 @@
     flex: 1.5;
   }
 
-  @media only screen and (max-width: $sm) {
-    display: none;
+  @media (max-width: $sm) {
+    margin-right: 0;
   }
 }
 
