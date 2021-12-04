@@ -3,7 +3,7 @@
 .introWrapper {
   align-items: center;
   bottom: 0;
-  background-color: red;
+  background-color: var(--red);
   clip-path: inset(0 0 100% 0);
   display: flex;
   height: 100%;
@@ -17,9 +17,9 @@
   z-index: 99;
 }
 
-.introLogo {
+.introLogo a {
   color: var(--white);
-  font-size: 5em;
+  font-size: 3em;
   font-weight: bold;
   letter-spacing: -0.025em;
 }

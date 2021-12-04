@@ -1,9 +1,12 @@
 import css from '../styles/header.module.scss'
 import Link from 'next/link'
+import { MenuContext } from "../hooks/menuContext";
 import { useRouter } from 'next/router'
+import React, { useContext } from 'react'
 
 export default function Nav() {
   const router = useRouter();
+  const { toggle, toggleFunction} = useContext(MenuContext);
 
   return (
     <>
@@ -20,11 +23,10 @@ export default function Nav() {
         <Link href='/'>
           <a className={css.navLink}>Cases</a>
         </Link>
-        <div className={css.menuActivator}>
+        <div className={css.menuActivator} onClick={toggleFunction}>
           <span></span>
           <span></span>
         </div>
-        <div className={css.menuButton} style={{ display: 'none' }}>Menu</div>
       </nav>
     </>
   )

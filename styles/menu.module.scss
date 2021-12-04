@@ -1,0 +1,145 @@
+@import './sizes.scss';
+
+.menuContainer {
+  background-color: var(--red);
+  display: block;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.menuBackground {
+  background-color: var(--black);
+  display: block;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.menuCloser {
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  justify-content: space-between;
+  right: 4vw;
+  position: absolute;
+  top: 4vw;
+  width: 2rem;
+  z-index: 2;
+
+  span {
+    background-color: var(--light);
+    cursor: pointer;
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 0.5rem);
+    width: 100%;
+
+    &:first-child {
+      transform: translateY(50%) rotate(-45deg);
+    }
+
+    &:last-child {
+      transform: translateY(50%) rotate(45deg);
+    }
+  }
+}
+
+.menuContentWrapper {
+  align-items: center;
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 6rem 2vw;
+  position: relative;
+
+  @media only screen and (min-width: $m) {
+    padding: 10vw 6vw;
+  }
+}
+
+.menuContent {
+  max-width: 50vw;
+  width: calc(100vw - 8vw);
+  z-index: 1;
+
+  @media (max-width: $sm) {
+    max-width: none;
+  }
+}
+
+.menuTitle {
+  font-family: ivypresto-display, serif;
+  font-size: clamp(21px, 2vw, 40px);
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .listItem {
+    font-size: clamp(36px, 5vw, 100px);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+
+    a {
+      display: block;
+      line-height: 1;
+    }
+
+    .linkItem {
+      align-items: flex-start;
+      display: flex;
+      line-height: 1;
+    }
+
+    .linkNumber {
+      font-size: 0.25em;
+      font-weight: 500;
+      margin-top: 8px;
+      margin-right: 8px;
+      text-transform: lowercase;
+    }
+  }
+}
+
+.firstLink {
+  margin-left: 10%;
+}
+
+.secondLink {
+  margin-left: 20%;
+}
+
+.thirdLink {
+  margin-left: 30%;
+}
+
+.fourthLink {
+  margin-left: 10%;
+}
+
+.fifthLink {
+  margin-left: 0;
+}
+
+.sixthLink {
+  margin-left: 20%;
+}

@@ -7,9 +7,10 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap';
 
 export default function Home() {
-  const [animateIntro, setAnimateIntro] = useState(true);
+  const [animateIntro, setAnimateIntro] = useState(false);
   const introWrapper = useRef(null);
-  const tl = gsap.timeline({ defaults: { ease: 'Power3.easeInOut' }});
+  const heroRef = useRef(null);
+  const tl = gsap.timeline({ defaults: { ease: 'Power4.easeInOut' }});
 
   useEffect (() => {
     if (window.sessionStorage.getItem("firstLoadDone") === null) {
@@ -19,10 +20,11 @@ export default function Home() {
       gsap.set(introWrapper.current, {
         clipPath: 'inset(0 0 0% 0)',
       })
+      gsap.set(heroRef.current, { opacity: 0 })
 
       tl
         .to(introWrapper.current, {
-        duration: 2,
+        duration: 3,
         delay: 2,
         clipPath: 'inset(0 0 100% 0)',
         })
@@ -38,10 +40,10 @@ export default function Home() {
     <>
       <div className={`${css.introWrapper} ${animateIntro ? '' : css.introAnimationPlayed}`} ref={introWrapper}>
         <div className={css.introLogo}>
-          Please, never grow up
+          <Logo />
         </div>
       </div>
-      <Hero />
+      <Hero/>
       <Oversigt />
     </>
   )

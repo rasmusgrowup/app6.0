@@ -23,38 +23,30 @@ import OsBw from '../public/os_2.jpg'
 
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero(props) {
-  const heroSection = useRef();
-  const scrollSection = useRef();
-  const scrollInner = useRef();
-  const titleRef = useRef();
-  const asideRef = useRef();
-  const tAnim = gsap.utils.selector(titleRef);
-  const iAnim = gsap.utils.selector(scrollInner);
+  const titleRef = useRef(null);
+  const asideRef = useRef(null);
 
   return (
     <>
-      <section className={css.heroSection} ref={heroSection}>
+      <section className={css.heroSection}>
         <div className={css.heroTop}>
           <h1 className={css.heading} ref={titleRef}>
-            Kreatører af <span className='ivyPrestoItalic'>vidunderlige</span> hjemmesider og webshops, mestre i SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>kløgtig</span> branding
+            Kreatører af <span className='ivyPrestoItalic'>vidunderlige</span> hjemmesider og webshops, mestre af Shopify, SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>kløgtig</span> branding
           </h1>
           <div className={css.aside} ref={asideRef}>
             <div className={css.text}>
               <p>Foruden at levere responsive og søgemaskineoptimerede hjemmesider og netbutikker, udvikler vi unikke visuelle identiteter, skaber spændende billede- og videoindhold, og kløgtig kommunikation. Vi er desuden meget mere end et traditionelt design bureau — vi er også jeres Ecommerce Manager eller SoMe-ansvarlig.</p>
             </div>
             <ul className={css.contact}>
-              <li className={css.icon}>
+              <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://www.behance.net/rieholst/projects'><a><Image src={Behance} layout='responsive'/></a></Link>
               </li>
-              <li className={css.icon}>
+              <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://instragram.com/growupstudio.dk'><a><Image src={Instagram} layout='responsive'/></a></Link>
               </li>
-              <li className={css.icon}>
+              <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://www.linkedin.com/company/growup-studio/'><a><Image src={Linkedin} layout='responsive'/></a></Link>
               </li>
               <li className={css.mail}>
@@ -235,10 +227,10 @@ export default function Hero(props) {
           </div>
           <div className={css.bottomImage}>
             <div className={css.smallImage}>
-              <Image src={Os} layout='responsive' quality='100' placeholder='blur'/>
+              <Image src={Os} layout='responsive' quality='100'/>
             </div>
             <div className={css.bigImage}>
-              <Image src={OsBw} layout='responsive' quality='100' placeholder='blur'/>
+              <Image src={OsBw} layout='responsive' quality='100'/>
             </div>
           </div>
         </div>

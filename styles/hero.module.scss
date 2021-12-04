@@ -3,7 +3,7 @@
 .heroSection {
   background-color: var(--dark);
   min-height: 100vh;
-  padding: 5rem 3vw 2rem;
+  padding: 6rem 3vw 2rem;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -26,7 +26,7 @@
 .heading {
   color: var(--light);
   display: inline-block;
-  font-size: clamp(30px, 4.1vw, 8rem);
+  font-size: clamp(30px, 3.75vw, 8rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.015em;
@@ -38,6 +38,7 @@
     margin-bottom: 2rem;
     margin-right: 0;
     max-width: none;
+    text-align: center;
     width: 100%;
   }
 }
@@ -67,6 +68,10 @@
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
+
+  @media only screen and (max-width: $sm) {
+    text-align: center;
+  }
 }
 
 .contact {
@@ -77,6 +82,10 @@
   margin-bottom: 0;
   margin-top: 2rem;
   padding: 0;
+
+  @media only screen and (max-width: $sm) {
+    justify-content: center;
+  }
 
   .mail {
     background-color: var(--light);
@@ -277,6 +286,7 @@
   @media (max-width: $sm) {
     margin-bottom: 2rem;
     padding-right: 0;
+    text-align: center;
     width: 100%;
   }
 }
