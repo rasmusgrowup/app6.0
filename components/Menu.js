@@ -1,14 +1,19 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import Arrow from '../public/arrow_white.svg'
+import { useRouter } from 'next/router'
 import css from '../styles/menu.module.scss'
 import { gsap } from 'gsap'
 import { MenuContext } from "../hooks/menuContext";
 import React, { useContext, useEffect, useRef, useState } from 'react'
 
 export default function Menu() {
+  const router = useRouter();
   const container = useRef(null);
   const background = useRef(null);
   const closer = useRef(null);
   const menuItems = useRef(null);
+  const socials = useRef(null);
   const q = gsap.utils.selector(menuItems);
   const { toggle, toggleFunction} = useContext(MenuContext);
   const tl = useRef();
@@ -17,6 +22,7 @@ export default function Menu() {
     gsap.set(background.current, {xPercent: 100})
     gsap.set(container.current, {xPercent: 100})
     gsap.set(closer.current, {clipPath: 'inset(0 0 0 100%)'})
+    gsap.set(socials.current, {clipPath: 'inset(0 0 0 100%)'})
     gsap.set(q('h2, ul li a'), {clipPath: 'inset(0 0 0 100%)'})
 
     tl.current = gsap.timeline()
@@ -36,6 +42,11 @@ export default function Menu() {
       ease: 'Power4.easeInOut',
       stagger: 0.05,
     }, container.current)
+    .to(socials.current, {
+      duration: 1.8,
+      clipPath: 'inset(0 0 0 0%)',
+      ease: 'Power4.easeInOut'
+    }, '<0.6')
     .to(closer.current, {
       duration: 1.8,
       clipPath: 'inset(0 0 0 0%)',
@@ -58,15 +69,15 @@ export default function Menu() {
           <span></span>
           <span></span>
         </div>
-        <div className={css.menuBackground} id='menuBackground' ref={background}>
+        <div className={css.menuSection} id='menuBackground' ref={background}>
         <div className={css.menuContentWrapper}>
           <div className={css.menuContent} ref={menuItems}>
-            <h2 className={css.menuTitle}>Få et indblik i vores</h2>
+            <h2 className={css.menuTitle}>Lær mere om vores</h2>
             <ul className={css.list}>
               <li className={css.listItem}>
                 <Link href='/'>
-                  <a className={css.firstLink}>
-                    <div className={css.linkItem}>
+                  <a className={css.firstLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>01.</span>
                       Ydelser
                     </div>
@@ -75,19 +86,9 @@ export default function Menu() {
               </li>
               <li className={css.listItem}>
                 <Link href='/'>
-                  <a className={css.secondLink}>
-                    <div className={css.linkItem}>
+                  <a className={css.secondLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/cases' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>02.</span>
-                      Løsninger
-                    </div>
-                  </a>
-                </Link>
-              </li>
-              <li className={css.listItem}>
-                <Link href='/'>
-                  <a className={css.thirdLink}>
-                    <div className={css.linkItem}>
-                      <span className={css.linkNumber}>03.</span>
                       Cases
                     </div>
                   </a>
@@ -95,28 +96,38 @@ export default function Menu() {
               </li>
               <li className={css.listItem}>
                 <Link href='/'>
-                  <a className={css.fourthLink}>
-                    <div className={css.linkItem}>
-                      <span className={css.linkNumber}>04.</span>
-                      Referencer
-                    </div>
-                  </a>
-                </Link>
-              </li>
-              <li className={css.listItem} style={{ display: 'none' }}>
-                <Link href='/'>
-                  <a className={css.fifthLink}>
-                    <div className={css.linkItem}>
-                      <span className={css.linkNumber}>05.</span>
-                      Historie
+                  <a className={css.thirdLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/kurser' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
+                      <span className={css.linkNumber}>03.</span>
+                      Kurser
                     </div>
                   </a>
                 </Link>
               </li>
               <li className={css.listItem}>
                 <Link href='/'>
-                  <a className={css.sixthLink}>
-                    <div className={css.linkItem}>
+                  <a className={css.fourthLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
+                      <span className={css.linkNumber}>04.</span>
+                      Løsninger
+                    </div>
+                  </a>
+                </Link>
+              </li>
+              <li className={css.listItem}>
+                <Link href='/'>
+                  <a className={css.fifthLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/tips-og-tricks' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
+                      <span className={css.linkNumber}>05.</span>
+                      Tips & tricks
+                    </div>
+                  </a>
+                </Link>
+              </li>
+              <li className={css.listItem}>
+                <Link href='/'>
+                  <a className={css.sixthLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/kontakt' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>eller</span>
                       Kontakt os
                     </div>
@@ -126,6 +137,20 @@ export default function Menu() {
             </ul>
           </div>
         </div>
+        </div>
+        <div className={css.menuSocials} ref={socials}>
+          <Link href='https://instagram.com/growupstudio.dk'>
+            <a className={css.socialItem} target='_blank'>
+              <span className={css.socialItemLink}>Instagram</span>
+              <Image src={Arrow} />
+            </a>
+          </Link>
+          <Link href='https://instagram.com/growupstudio.dk'>
+            <a className={css.socialItem} target='_blank'>
+              <span className={css.socialItemLink}>Linkedin</span>
+              <Image src={Arrow} />
+            </a>
+          </Link>
         </div>
       </div>
     </>

@@ -12,7 +12,7 @@ export default function Nav() {
     <>
       <nav className={css.navContainer}>
         <Link href='/'>
-          <a className={router.pathname == '/' ? `${css.navLink} ${css.activeNavLink}` : `${css.navLink}`}>Om os</a>
+          <a className={router.pathname == '/' ? `${css.navLink} ${css.activeNavLink}` : `${css.navLink}`}>Ydelser</a>
         </Link>
         <Link href='/'>
           <a className={css.navLink}>Cases</a>

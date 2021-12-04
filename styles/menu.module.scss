@@ -11,7 +11,7 @@
   z-index: 99;
 }
 
-.menuBackground {
+.menuSection {
   background-color: var(--black);
   display: block;
   height: 100%;
@@ -32,6 +32,11 @@
   top: 4vw;
   width: 2rem;
   z-index: 2;
+
+  @media (max-width: $sm) {
+    right: 1rem;
+    top: 1rem;
+  }
 
   span {
     background-color: var(--light);
@@ -110,6 +115,10 @@
       line-height: 1;
     }
 
+    .activeLinkItem {
+      color: var(--red);
+    }
+
     .linkNumber {
       font-size: 0.25em;
       font-weight: 500;
@@ -125,15 +134,15 @@
 }
 
 .secondLink {
-  margin-left: 20%;
+  margin-left: 25%;
 }
 
 .thirdLink {
-  margin-left: 30%;
+  margin-left: 40%;
 }
 
 .fourthLink {
-  margin-left: 10%;
+  margin-left: 15%;
 }
 
 .fifthLink {
@@ -141,5 +150,33 @@
 }
 
 .sixthLink {
-  margin-left: 20%;
+  margin-left: 25%;
+}
+
+.menuSocials {
+  bottom: 4vw;
+  display: flex;
+  left: 4vw;
+  position: absolute;
+
+  @media (max-width: $sm) {
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .socialItem {
+    align-items: flex-start;
+    color: var(--light);
+    display: flex;
+    line-height: 1;
+    margin-right: 1rem;
+
+    .socialItemLink {
+      margin-right: 0.25rem;
+    }
+
+    &:hover {
+      color: var(--red);
+    }
+  }
 }
