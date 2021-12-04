@@ -15,13 +15,13 @@ export default function Nav() {
           <a className={router.pathname == '/' ? `${css.navLink} ${css.activeNavLink}` : `${css.navLink}`}>Om os</a>
         </Link>
         <Link href='/'>
-          <a className={css.navLink}>Priser</a>
+          <a className={css.navLink}>Cases</a>
+        </Link>
+        <Link href='/'>
+          <a className={css.navLink}>Kurser</a>
         </Link>
         <Link href='/'>
           <a className={css.navLink}>Løsninger</a>
-        </Link>
-        <Link href='/'>
-          <a className={css.navLink}>Cases</a>
         </Link>
         <div className={css.menuActivator} onClick={toggleFunction}>
           <span></span>
