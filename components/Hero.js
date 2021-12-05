@@ -13,6 +13,8 @@ import TwelveInchTwo from '../public/Udsnit_Twelveinch_2.jpg'
 import TwelveInchThree from '../public/Udsnit_Twelveinch_3.jpg'
 import TwelveInchFour from '../public/Udsnit_Twelveinch_4.jpg'
 import TwelveInchFive from '../public/Udsnit_Twelveinch_5.jpg'
+import TwelveInchSix from '../public/Udsnit_Twelveinch_2.jpg'
+import TwelveInchSeven from '../public/twelve-inch-wall.jpg'
 import OrganicBagomOne from '../public/Udsnit_Organic_bagom_1.jpg'
 import OrganicBagomTwo from '../public/Udsnit_Organic_bagom_2.jpg'
 import OrganicBagomThree from '../public/Udsnit_Organic_bagom_3.jpg'
@@ -93,9 +95,22 @@ export default function Hero(props) {
                 <source src={'/OrganicInstaPost.mp4'} type='video/mp4' />
               </video>
             </div>
+            <div className={css.columnItem} data-number='4' data-sort='04.'>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                width='100%'
+                height='100%'
+                style={{ objectFit: 'cover' }}
+                >
+                <source src={'/OrganicInstaPost_3.mp4'} type='video/mp4' />
+              </video>
+            </div>
           </div>
           <div className={css.columnTwo}>
-            <div className={css.columnItem} data-number='1' data-sort='04.'>
+            <div className={css.columnItem} data-number='1' data-sort='05.'>
               <Image
                 src={OrganicBagomThree}
                 layout='fill'
@@ -105,7 +120,7 @@ export default function Hero(props) {
                 priority='true'
               />
             </div>
-            <div className={css.columnItem} data-number='2' data-sort='05.'>
+            <div className={css.columnItem} data-number='2' data-sort='06.'>
               <Image
                 src={OrganicTwo}
                 layout='fill'
@@ -114,7 +129,16 @@ export default function Hero(props) {
                 quality='100'
               />
             </div>
-            <div className={css.columnItem} data-number='3' data-sort='06.'>
+            <div className={css.columnItem} data-number='3' data-sort='07.'>
+              <Image
+                src={TwelveInchSeven}
+                layout='fill'
+                objectFit='cover'
+                objectPosition='center'
+                quality='100'
+              />
+            </div>
+            <div className={css.columnItem} data-number='4' data-sort='08.'>
               <Image
                 src={TwelveInchOne}
                 layout='fill'
@@ -123,7 +147,7 @@ export default function Hero(props) {
                 quality='100'
               />
             </div>
-            <div className={css.columnItem} data-number='4' data-sort='07.'>
+            <div className={css.columnItem} data-number='5' data-sort='09.'>
               <Image
                 src={TwelveInchFive}
                 layout='fill'
@@ -134,7 +158,7 @@ export default function Hero(props) {
             </div>
           </div>
           <div className={css.columnThree}>
-            <div className={css.columnItem} data-number='1' data-sort='08.'>
+            <div className={css.columnItem} data-number='1' data-sort='10.'>
               <Image
                 src={Organic}
                 layout='fill'
@@ -144,7 +168,20 @@ export default function Hero(props) {
                 priority='true'
               />
             </div>
-            <div className={css.columnItem} data-number='2' data-sort='09.'>
+            <div className={css.columnItem} data-number='3' data-sort='11.'>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                width='100%'
+                height='100%'
+                style={{ objectFit: 'cover' }}
+                >
+                <source src={'/OrganicInstaPost_2.mp4'} type='video/mp4' />
+              </video>
+            </div>
+            <div className={css.columnItem} data-number='2' data-sort='12.'>
               <Image
                 src={OrganicBagomTwo}
                 layout='fill'
@@ -153,7 +190,7 @@ export default function Hero(props) {
                 quality='100'
               />
             </div>
-            <div className={css.columnItem} data-number='3' data-sort='10.'>
+            <div className={css.columnItem} data-number='3' data-sort='13.'>
               <Image
                 src={TwelveInchThree}
                 layout='fill'
@@ -164,7 +201,7 @@ export default function Hero(props) {
             </div>
           </div>
           <div className={css.columnFour}>
-            <div className={css.columnItem} data-number='1' data-sort='11.'>
+            <div className={css.columnItem} data-number='1' data-sort='14.'>
               <video
                 autoPlay
                 muted
@@ -177,7 +214,7 @@ export default function Hero(props) {
                 <source src={'/ByMickleitVideo.mp4'} type='video/mp4' />
               </video>
             </div>
-            <div className={css.columnItem} data-number='2' data-sort='12.'>
+            <div className={css.columnItem} data-number='2' data-sort='15.'>
               <Image
                 src={ByMickleit}
                 layout='fill'
@@ -186,7 +223,16 @@ export default function Hero(props) {
                 quality='100'
               />
             </div>
-            <div className={css.columnItem} data-number='3' data-sort='13.'>
+            <div className={css.columnItem} data-number='2' data-sort='16.'>
+              <Image
+                src={TwelveInchSix}
+                layout='fill'
+                objectFit='cover'
+                objectPosition='bottom'
+                quality='100'
+              />
+            </div>
+            <div className={css.columnItem} data-number='3' data-sort='17.'>
               <Image
                 src={TwelveInchFour}
                 layout='fill'
@@ -200,19 +246,23 @@ export default function Hero(props) {
 
         <div className={css.heroCaptions}>
           <ul className={css.heroList}>
-            <li>Tinekhome — Art Direction</li>
-            <li>The Organic Crave Company — Art Direction</li>
-            <li>The Organic Crave Company — SoMe post</li>
-            <li>The Organic Crave Company — Instruering af model</li>
-            <li>The Organic Crave Company — SoMe post</li>
-            <li>Twelve Inch — Art Direction</li>
-            <li>Twelve Inch — Art Direction</li>
-            <li>The Organic Crave Company — Art Direction</li>
-            <li>The Organic Crave Company — Instruering af model</li>
-            <li>Twelve Inch — Art Direction</li>
-            <li>ByMickleit — Filminstruering</li>
-            <li>ByMickleit — Art Direction</li>
-            <li>Twelve Inch — Art Direction</li>
+            <li>Tinekhome</li>
+            <li>The Organic Crave Company</li>
+            <li>The Organic Crave Company</li>
+            <li>The Organic Crave Company</li>
+            <li>The Organic Crave Company</li>
+            <li>The Organic Crave Company</li>
+            <li>Twelve Inch</li>
+            <li>Twelve Inch</li>
+            <li>Twelve Inch</li>
+            <li>The Organic Crave Company</li>
+            <li>The Organic Crave Company</li>
+            <li>The Organic Crave Company</li>
+            <li>Twelve Inch</li>
+            <li>ByMickleit</li>
+            <li>ByMickleit</li>
+            <li>Twelve Inch</li>
+            <li>Twelve Inch</li>
           </ul>
         </div>
 
