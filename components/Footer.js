@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import Arrow from '../public/arrow_dark.svg'
 import css from '../styles/footer.module.scss'
 
 import { useEffect, useRef } from 'react'
@@ -34,9 +36,23 @@ export default function Footer() {
   return (
     <>
       <footer className={css.mainFooter} ref={footer}>
+        <div className={css.footerSocials}>
+          <Link href='https://instagram.com/growupstudio.dk'>
+            <a className={css.socialItem} target='_blank'>
+              <span className={css.socialItemLink}>Instagram</span>
+              <Image src={Arrow} />
+            </a>
+          </Link>
+          <Link href='https://instagram.com/growupstudio.dk'>
+            <a className={css.socialItem} target='_blank'>
+              <span className={css.socialItemLink}>Linkedin</span>
+              <Image src={Arrow} />
+            </a>
+          </Link>
+        </div>
         <div className={css.footerTop}>
           <div className={css.footerContact}>
-            <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Invitér os ud</a></Link>
+            <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Arbejd med os</a></Link>
           </div>
           <div className={css.address}>
             eller besøg os på Havnegade 100L, Odense C 5000

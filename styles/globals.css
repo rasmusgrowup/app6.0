@@ -1,6 +1,7 @@
 html,
 body {
   background-color: var(--dark);
+  color: var(--dark);
   font-family:
     'neue-haas-grotesk-display',
     -apple-system,
@@ -57,11 +58,15 @@ p {
   --black: #000;
   --red: #fa233b;
   --dark: rgb(11, 11, 11);
+  --dark: #0a0b12;
+  --dark: #0b0c12;
   --light: #f0efea;
   --light: rgb(255, 250, 242);
+  --light: #F5F4ED;
   --sand: #faf3e8;
   --leftpadding: 4vw;
   --rightpadding: 4vw;
   --toppadding: 4vw;
+  --padding: 4vw;
   --ease: cubic-bezier(0.85, 0, 0.15, 1);
 }

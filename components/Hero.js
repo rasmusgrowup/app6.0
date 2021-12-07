@@ -7,7 +7,7 @@ import Linkedin from '../public/linkedin.svg'
 import Behance from '../public/behance.svg'
 
 import ByMickleit from '../public/Udsnit_ByMickleit.jpg'
-import ItemFive from '../public/item5.jpg'
+import ChefJenSkilt from '../public/ChefJenUdsnit.jpg'
 import TwelveInchOne from '../public/Udsnit_Twelveinch_1.jpg'
 import TwelveInchTwo from '../public/Udsnit_Twelveinch_2.jpg'
 import TwelveInchThree from '../public/Udsnit_Twelveinch_3.jpg'
@@ -20,39 +20,32 @@ import OrganicBagomTwo from '../public/Udsnit_Organic_bagom_2.jpg'
 import OrganicBagomThree from '../public/Udsnit_Organic_bagom_3.jpg'
 import Organic from '../public/Udsnit_Organic.jpg'
 import OrganicTwo from '../public/Udsnit_Organic_2.jpg'
-import Os from '../public/os_2_bw.jpg'
-import OsBw from '../public/os.jpg'
-
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
 
 export default function Hero(props) {
-  const titleRef = useRef(null);
-  const asideRef = useRef(null);
 
   return (
     <>
       <section className={css.heroSection}>
         <div className={css.heroTop}>
-          <h1 className={css.heading} ref={titleRef}>
-            Kreatører af <span className='ivyPrestoItalic'>vidunderlige</span> hjemmesider og webshops, mestre af Shopify, SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>kløgtig</span> branding
+          <h1 className={css.heading}>
+            Kreatører af <span className='ivyPrestoItalic'>eventyrlige</span> hjemmesider og webshops, mestre af Shopify, SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>kløgtig</span> branding
           </h1>
-          <div className={css.aside} ref={asideRef}>
+          <div className={css.aside}>
             <div className={css.text}>
               <p>Foruden at levere responsive og søgemaskineoptimerede hjemmesider og netbutikker, udvikler vi unikke visuelle identiteter, skaber spændende billede- og videoindhold, og kløgtig kommunikation. Vi er desuden meget mere end et traditionelt design bureau — vi er også jeres Ecommerce Manager eller SoMe-ansvarlig.</p>
             </div>
             <ul className={css.contact}>
-              <li className={css.icon} style={{ display: 'none' }}>
+              <li className={css.icon}>
                 <Link href='https://www.behance.net/rieholst/projects'><a><Image src={Behance} layout='responsive'/></a></Link>
               </li>
-              <li className={css.icon} style={{ display: 'none' }}>
+              <li className={css.icon}>
                 <Link href='https://instragram.com/growupstudio.dk'><a><Image src={Instagram} layout='responsive'/></a></Link>
               </li>
-              <li className={css.icon} style={{ display: 'none' }}>
+              <li className={css.icon}>
                 <Link href='https://www.linkedin.com/company/growup-studio/'><a><Image src={Linkedin} layout='responsive'/></a></Link>
               </li>
               <li className={css.mail}>
-                <Link href='/'><a>Arbejd med os</a></Link>
+                <Link href='mailto:hello@growupstudio.dk'><a>Arbejd med os</a></Link>
               </li>
             </ul>
           </div>
@@ -149,7 +142,7 @@ export default function Hero(props) {
             </div>
             <div className={css.columnItem} data-number='5' data-sort='09.'>
               <Image
-                src={TwelveInchFive}
+                src={ChefJenSkilt}
                 layout='fill'
                 objectFit='cover'
                 objectPosition='center'
@@ -219,7 +212,7 @@ export default function Hero(props) {
                 src={ByMickleit}
                 layout='fill'
                 objectFit='cover'
-                objectPosition='top'
+                objectPosition='center'
                 quality='100'
               />
             </div>
@@ -246,43 +239,24 @@ export default function Hero(props) {
 
         <div className={css.heroCaptions}>
           <ul className={css.heroList}>
-            <li>Tinekhome</li>
-            <li>The Organic Crave Company</li>
-            <li>The Organic Crave Company</li>
-            <li>The Organic Crave Company</li>
-            <li>The Organic Crave Company</li>
-            <li>The Organic Crave Company</li>
-            <li>Twelve Inch</li>
-            <li>Twelve Inch</li>
-            <li>Twelve Inch</li>
-            <li>The Organic Crave Company</li>
-            <li>The Organic Crave Company</li>
-            <li>The Organic Crave Company</li>
-            <li>Twelve Inch</li>
-            <li>ByMickleit</li>
-            <li>ByMickleit</li>
-            <li>Twelve Inch</li>
-            <li>Twelve Inch</li>
+            <li>Videoinstruering for Tinekhome</li>
+            <li>Art Direction for The Organic Crave Company</li>
+            <li>Online markedsføring for The Organic Crave Company</li>
+            <li>Online markedsføring for The Organic Crave Company</li>
+            <li>Instruering af model for The Organic Crave Company</li>
+            <li>Online markedsføring for The Organic Crave Company</li>
+            <li>Billedinstruering for Twelve Inch</li>
+            <li>Billedinstruering for Twelve Inch</li>
+            <li>Logodesign for Chef Jen</li>
+            <li>Art Direction for The Organic Crave Company</li>
+            <li>Online markedsføring for The Organic Crave Company</li>
+            <li>Instruering af model for The Organic Crave Company</li>
+            <li>Billedinstruering for Twelve Inch</li>
+            <li>Videoinstruering for ByMickleit</li>
+            <li>Billedinstruering for ByMickleit</li>
+            <li>Billedinstruering for Twelve Inch</li>
+            <li>Billedinstruering for Twelve Inch</li>
           </ul>
-        </div>
-
-        <div className={css.heroBottom}>
-          <div className={css.bottomColumn}>
-          <h2 className={css.bottomTitle}>Lad os føre jer fra idé til færdigt produkt — og <span className='ivyPrestoItalic'>videre</span> endnu.
-            <small>Slip for at ansætte dyre medarbejdere — brug i stedet os, som jeres Ecommerce Manager eller SoMe-ansvarlig.</small>
-          </h2>
-          <p>
-            Klarer i det hele selv for jeres virksomhed? Det kan vi godt relatere til. Growup eksisterer netop for at aflaste start-ups og virksomheder, og føre dem et skridt tættere på, at blive et voksent brand. Lad os stå for jeres webshop og visuelle kommunikation — så bliver der mere tid til at pleje forretningen, og tage jer af jeres egne kunder.
-          </p>
-          </div>
-          <div className={css.bottomImage}>
-            <div className={css.smallImage}>
-              <Image src={Os} layout='responsive' quality='100'/>
-            </div>
-            <div className={css.bigImage}>
-              <Image src={OsBw} layout='responsive' quality='100'/>
-            </div>
-          </div>
         </div>
       </section>
     </>

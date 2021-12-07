@@ -11,7 +11,9 @@ export default function Nav() {
   return (
     <>
       <nav className={css.navContainer}>
-        <div className={css.navigate}>Navigér</div>
+        <Link href='/'>
+          <a className={router.pathname == '/' ? `${css.navLink} ${css.activeNavLink}` : `${css.navLink}`}>Om os</a>
+        </Link>
         <div className={css.menuActivator} onClick={toggleFunction}>
           <span></span>
           <span></span>

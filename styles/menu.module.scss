@@ -12,7 +12,7 @@
 }
 
 .menuSection {
-  background-color: var(--black);
+  background-color: var(--dark);
   display: block;
   height: 100%;
   position: fixed;
@@ -56,6 +56,10 @@
       transform: translateY(50%) rotate(45deg);
     }
   }
+
+  &:active {
+    transform: scale(0.8);
+  }
 }
 
 .menuContentWrapper {
@@ -74,7 +78,7 @@
 }
 
 .menuContent {
-  max-width: 50vw;
+  max-width: 55vw;
   width: calc(100vw - 8vw);
   z-index: 1;
 
@@ -130,27 +134,27 @@
 }
 
 .firstLink {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .secondLink {
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .thirdLink {
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
 .fourthLink {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .fifthLink {
-  margin-left: 0;
+  margin-left: 35%;
 }
 
 .sixthLink {
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 .menuSocials {
@@ -170,6 +174,7 @@
     display: flex;
     line-height: 1;
     margin-right: 1rem;
+    padding-bottom: 2px;
 
     .socialItemLink {
       margin-right: 0.25rem;

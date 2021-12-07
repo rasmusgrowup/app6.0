@@ -1,0 +1,27 @@
+@import './sizes.scss';
+
+.sectionTitle {
+  color: var(--dark);
+  display: flex;
+  line-height: 1;
+
+  h2 {
+    font-size: clamp(21px, 10vw, 5rem);
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .titleNumber {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 0.4rem;
+
+    @media (max-width: $sm) {
+      margin-top: 4px;
+    }
+  }
+}
+
+#referencesTitle {
+
+}

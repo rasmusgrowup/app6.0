@@ -67,7 +67,7 @@ export default function Oversigt() {
               </Link>
             </li>
             <li className={css.listItem}>
-              <Link href='/'>
+              <Link href='#referencer'>
                 <a className={css.fourthLink}>
                   <div className={css.linkItem}>
                     <span className={css.linkNumber}>04.</span>

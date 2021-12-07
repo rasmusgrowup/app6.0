@@ -15,7 +15,7 @@
 }
 
 .oversigtInner {
-  max-width: 50vw;
+  max-width: 55vw;
   width: calc(100vw - 8vw);
   z-index: 1;
 
@@ -25,6 +25,7 @@
 }
 
 .oversigtTitle {
+  color: var(--dark);
   font-family: ivypresto-display, serif;
   font-size: clamp(21px, 2vw, 40px);
   font-style: normal;
@@ -35,6 +36,7 @@
 }
 
 .list {
+  color: var(--dark);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -63,11 +65,15 @@
       margin-right: 8px;
       text-transform: lowercase;
     }
+
+    &:hover {
+      color: var(--red);
+    }
   }
 }
 
 .firstLink {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .secondLink {
@@ -75,7 +81,7 @@
 }
 
 .thirdLink {
-  margin-left: 30%;
+  margin-left: 35%;
 }
 
 .fourthLink {
@@ -87,5 +93,5 @@
 }
 
 .sixthLink {
-  margin-left: 20%;
+  margin-left: 30%;
 }
