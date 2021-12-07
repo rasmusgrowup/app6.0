@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import Os from '../components/Os'
+import YdelserShort from '../components/YdelserShort'
 import Oversigt from '../components/Oversigt'
 import Logo from '../components/Logo'
 import css from '../styles/intro.module.scss'
@@ -46,6 +47,7 @@ export default function Home() {
       </div>
       <Hero/>
       <Oversigt />
+      <YdelserShort />
     </>
   )
 }

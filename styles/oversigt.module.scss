@@ -8,6 +8,7 @@
   min-height: 100vh;
   padding: 6rem 2vw;
   position: relative;
+  z-index: 80;
 
   @media only screen and (min-width: $m) {
     padding: 10vw 6vw;

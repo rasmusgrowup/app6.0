@@ -8,32 +8,33 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Oversigt() {
-  const oversigtSection = useRef();
-  const oversigtInner = useRef();
+  const section = useRef();
+  const inner = useRef();
 
   useEffect(() => {
-    gsap.set(oversigtInner.current, { y: 0, yPercent: -75, willChange: 'transform' })
-    const animation = gsap.to(oversigtInner.current, {
+    gsap.set(inner.current, { y: -300, willChange: 'transform' })
+    const animation = gsap.to(inner.current, {
       yPercent: 0,
       y: 0,
       ease: 'none',
       scrollTrigger: {
-        trigger: oversigtSection.current,
+        trigger: section.current,
         start: 'top bottom',
-        end: 'center center',
+        end: 'bottom bottom',
         scrub: true,
       }
     })
 
     return () => {
+      animation.scrollTrigger.refresh();
       animation.scrollTrigger.kill();
     }
   }, [])
 
   return (
     <>
-      <section className={css.oversigtSection} ref={oversigtSection}>
-        <div className={css.oversigtInner} ref={oversigtInner}>
+      <section className={css.oversigtSection} ref={section}>
+        <div className={css.oversigtInner} ref={inner}>
           <h2 className={css.oversigtTitle}>Få et indblik i vores</h2>
           <ul className={css.list}>
             <li className={css.listItem}>

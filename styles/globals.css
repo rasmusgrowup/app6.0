@@ -40,6 +40,15 @@ a {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
@@ -63,6 +72,7 @@ p {
   --light: #f0efea;
   --light: rgb(255, 250, 242);
   --light: #F5F4ED;
+  --lightGrey: #f8f8f8;
   --sand: #faf3e8;
   --leftpadding: 4vw;
   --rightpadding: 4vw;
