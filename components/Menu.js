@@ -85,7 +85,7 @@ export default function Menu() {
                 </Link>
               </li>
               <li className={css.listItem}>
-                <Link href='/'>
+                <Link href='#ydelser'>
                   <a className={css.secondLink} onClick={toggleFunction}>
                     <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>02.</span>

@@ -5,80 +5,132 @@
   margin-right: 0.5rem;
   margin-top: 0.25rem;
   font-weight: 500;
+  margin-left: -1.5rem;
+  position: absolute;
+
+  @media only screen and (max-width: $sm) {
+    position: relative;
+    margin-left: 0;
+  }
 }
 
 .ydelserShortSection {
   background-color: var(--dark);
   color: var(--sand);
-  min-height: 100vh;
+  padding: 6vw 0;
   position: relative;
   z-index: 2;
   width: 100%;
+
+  @media (max-width: $sm) {
+    padding: 6rem 1rem;
+  }
 }
 
 .ydelserUpper {
   align-items: stretch;
   display: flex;
+  margin: 0 auto;
+  max-width: 1240px;
   padding: 6rem 0 2rem;
+  position: relative;
+
+  @media (max-width: $sm) {
+    display: block;
+  }
 
   @media only screen and (min-width: $m) {
-    padding: 12vw var(--leftpadding) 6vw var(--rightpadding);
+    padding: 6vw 4rem 6vw 4rem;
   }
 
   h2 {
-    font-size: clamp(30px, 4.5vw, 8rem);
+    font-size: clamp(42px, 5vw, 4rem);
     flex: 3;
     line-height: 1;
-    padding-right: 12vw;
+    margin-right: 15vw;
+    max-width: 50%;
+
+    @media (max-width: $sm) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+      max-width: none;
+    }
   }
 
-  p {
+  .text {
+    display: flex;
     flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 0.5rem;
   }
 
+  .contact {
+    background-color: var(--sand);
+    border-radius: 25vw;
+    color: var(--dark);
+    display: block;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 3rem;
+    padding: 0.75vw 2vw;
+    text-align: center;
+    width: 50%;
+
+    @media only screen and (max-width: $sm) {
+      padding: 4vw;
+      width: 100%;
+    }
+  }
+}
+
+.ydelserBottom {
+  column-gap: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 6rem 0 2rem;
+  row-gap: 4rem;
+
+  @media only screen and (min-width: $m) {
+    padding: 6vw 4rem 6vw 4rem;
+  }
+
   @media (max-width: $sm) {
     display: block;
   }
 }
 
-.ydelserCarouselWrapper {
-  overflow: hidden;
+.bottomItem {
+  border-bottom: 2px solid rgba(255, 250, 242, 0.2);
+  opacity: 0.2;
+  padding-bottom: 2rem;
   position: relative;
-}
-
-.ydelserCarouselInner {
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  padding: 6vw 0 6vw 35vw;
-  position: relative;
-  width: calc(6 * 38vw);
 
   @media (max-width: $sm) {
-    padding: 1vw;
-    width: calc(6 * 98vw);
-  }
-}
-
-.item {
-  align-items: center;
-  background-color: var(--dark);
-  display: inline-flex;
-  flex-direction: column;
-  margin-right: 8vw;
-  width: 30vw;
-
-  @media (max-width: $sm) {
-    width: 90vw;
+    border-bottom: 0;
+    width: 80%;
   }
 
-  .ydelse {
-    color: var(--sand);
+  span {
+    font-size: 0.75em;
+  }
+
+  h3 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .line {
+    border-bottom: 2px solid rgba(255, 250, 242, 1);
+    bottom: -1px;
     display: block;
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-top: -1.35rem;
-    mix-blend-mode: difference;
+    position: absolute;
+    width: 0%;
   }
 }
