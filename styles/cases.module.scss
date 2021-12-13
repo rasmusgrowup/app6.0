@@ -1,0 +1,111 @@
+@import './sizes.scss';
+
+// overridable styling
+.shortNumber {
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+  margin-left: -2rem;
+  position: absolute;
+
+  @media only screen and (max-width: $sm) {
+    position: relative;
+    margin-left: 0;
+  }
+}
+
+.casesShortSection {
+  background-color: var(--black);
+  color: var(--sand);
+  padding: 6vw 0;
+  position: relative;
+  z-index: 60;
+  width: 100%;
+
+  @media (max-width: $sm) {
+    padding: 6rem 1rem;
+  }
+}
+
+.casesUpper {
+  align-items: stretch;
+  display: flex;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 6rem 0 2rem;
+  position: relative;
+
+  @media (max-width: $sm) {
+    display: block;
+  }
+
+  h2 {
+    font-size: clamp(42px, 4.25vw, 4rem);
+    flex: 3;
+    line-height: 1;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media (max-width: $sm) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+      max-width: none;
+    }
+  }
+}
+
+.textImage {
+  align-items: stretch;
+  display: flex;
+  margin: 4rem auto;
+  max-width: 720px;
+
+  .imageContainer {
+    flex: 1;
+    margin-right: 4rem;
+    max-width: 50%;
+  }
+
+  .text {
+    strong {
+      display: block;
+      font-size: 1.25em;
+      margin-bottom: 1.2rem;
+    }
+
+    margin-top: 0.5rem;
+    width: 50%;
+  }
+}
+
+.cases {
+  margin: 6rem auto;
+  max-width: 980px;
+}
+
+.case {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.caseInner {
+  display: flex;
+  justify-content: space-between;
+
+  [data='left'] {
+    margin-right: 0.5vw;
+  }
+}
+
+.caseTitle {
+  bottom: 0.22rem;
+  left: -0.5rem;
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+}
+
+.caseTall,
+.caseWide {
+  display: block;
+}

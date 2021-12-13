@@ -28,27 +28,27 @@ export default function Menu() {
     tl.current = gsap.timeline()
     .to(container.current, {
       xPercent: 0,
-      duration: 1.8,
+      duration: 1.5,
       ease: 'Power4.easeInOut'
     })
     .to(background.current, {
       xPercent: 0,
-      duration: 1.8,
+      duration: 1.5,
       ease: 'Power4.easeInOut'
     }, '<0.1')
     .to(q('h2, ul li a'), {
-      duration: 2.4,
+      duration: 2.2,
       clipPath: 'inset(0 0 0 0%)',
       ease: 'Power4.easeInOut',
       stagger: 0.05,
     }, container.current)
     .to(socials.current, {
-      duration: 1.8,
+      duration: 1.5,
       clipPath: 'inset(0 0 0 0%)',
       ease: 'Power4.easeInOut'
     }, '<0.6')
     .to(closer.current, {
-      duration: 1.8,
+      duration: 1.5,
       clipPath: 'inset(0 0 0 0%)',
       ease: 'Power4.easeInOut'
     }, '<0.6');
@@ -79,7 +79,7 @@ export default function Menu() {
                   <a className={css.firstLink} onClick={toggleFunction}>
                     <div className={router.pathname == '/' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>01.</span>
-                      Hvem vi er
+                      Eksempler
                     </div>
                   </a>
                 </Link>
@@ -109,7 +109,7 @@ export default function Menu() {
                   <a className={css.fourthLink} onClick={toggleFunction}>
                     <div className={router.pathname == '/cases' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>04.</span>
-                      Referencer
+                      Hjemmesider
                     </div>
                   </a>
                 </Link>
@@ -117,6 +117,16 @@ export default function Menu() {
               <li className={css.listItem}>
                 <Link href='/'>
                   <a className={css.fifthLink} onClick={toggleFunction}>
+                    <div className={router.pathname == '/cases' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
+                      <span className={css.linkNumber}>05.</span>
+                      Referencer
+                    </div>
+                  </a>
+                </Link>
+              </li>
+              <li className={css.listItem}>
+                <Link href='/'>
+                  <a className={css.sixthLink} onClick={toggleFunction}>
                     <div className={router.pathname == '/kontakt' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>eller</span>
                       Kontakt os

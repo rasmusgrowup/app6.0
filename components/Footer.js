@@ -11,6 +11,27 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Footer() {
   const mailRef = useRef();
   const footer = useRef();
+  const inner = useRef();
+
+  useEffect(() => {
+    gsap.set(inner.current, { y: -300, willChange: 'transform' })
+    const animation = gsap.to(inner.current, {
+      yPercent: 0,
+      y: 0,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: footer.current,
+        start: 'top bottom',
+        end: 'top top',
+        scrub: true,
+      }
+    })
+
+    return () => {
+      animation.scrollTrigger.refresh();
+      animation.scrollTrigger.kill();
+    }
+  }, [])
 
   useEffect(() => {
     gsap.set(mailRef.current, {
@@ -36,32 +57,34 @@ export default function Footer() {
   return (
     <>
       <footer className={css.mainFooter} ref={footer}>
-        <div className={css.footerSocials}>
-          <Link href='https://instagram.com/growupstudio.dk'>
-            <a className={css.socialItem} target='_blank'>
-              <span className={css.socialItemLink}>Instagram</span>
-              <Image src={Arrow} />
-            </a>
-          </Link>
-          <Link href='https://instagram.com/growupstudio.dk'>
-            <a className={css.socialItem} target='_blank'>
-              <span className={css.socialItemLink}>Linkedin</span>
-              <Image src={Arrow} />
-            </a>
-          </Link>
-        </div>
-        <div className={css.footerTop}>
-          <div className={css.footerContact}>
-            <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Arbejd med os</a></Link>
+        <div className={css.footerInner} ref={inner}>
+          <div className={css.footerSocials} style={{ display: 'none' }}>
+            <Link href='https://instagram.com/growupstudio.dk'>
+              <a className={css.socialItem} target='_blank'>
+                <span className={css.socialItemLink}>Instagram</span>
+                <Image src={Arrow} />
+              </a>
+            </Link>
+            <Link href='https://instagram.com/growupstudio.dk'>
+              <a className={css.socialItem} target='_blank'>
+                <span className={css.socialItemLink}>Linkedin</span>
+                <Image src={Arrow} />
+              </a>
+            </Link>
           </div>
-          <div className={css.address}>
-            eller besøg os på Havnegade 100L, Odense C 5000
+          <div className={css.footerTop}>
+            <div className={css.footerContact}>
+              <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Arbejd med os</a></Link>
+            </div>
+            <div className={css.address}>
+              eller besøg os på Havnegade 100L, Odense C 5000
+            </div>
           </div>
-        </div>
-        <div className={css.footerBottom}>
-          <p className={css.first}>CO2 kompenseret hjemmeside</p>
-          <p className={css.second}>Cookie-frit website</p>
-          <p className={css.third}>© 2021 Growup Aps</p>
+          <div className={css.footerBottom}>
+            <p className={css.first}>Cookie-frit website</p>
+            <p className={css.second}>CVR 39852640</p>
+            <p className={css.third}>© 2021 Growup Aps</p>
+          </div>
         </div>
       </footer>
     </>

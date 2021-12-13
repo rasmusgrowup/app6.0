@@ -19,7 +19,7 @@
   color: var(--sand);
   padding: 6vw 0;
   position: relative;
-  z-index: 2;
+  z-index: 70;
   width: 100%;
 
   @media (max-width: $sm) {
@@ -44,10 +44,10 @@
   }
 
   h2 {
-    font-size: clamp(42px, 5vw, 4rem);
+    font-size: clamp(42px, 5.2vw, 4rem);
     flex: 3;
     line-height: 1;
-    margin-right: 15vw;
+    margin-right: 17.5vw;
     max-width: 50%;
 
     @media (max-width: $sm) {
@@ -66,7 +66,7 @@
   }
 
   .contact {
-    background-color: var(--sand);
+    background-color: var(--light);
     border-radius: 25vw;
     color: var(--dark);
     display: block;
@@ -91,7 +91,7 @@
   margin: 0 auto;
   max-width: 1240px;
   padding: 6rem 0 2rem;
-  row-gap: 4rem;
+  row-gap: 3rem;
 
   @media only screen and (min-width: $m) {
     padding: 6vw 4rem 6vw 4rem;
@@ -105,7 +105,7 @@
 .bottomItem {
   border-bottom: 2px solid rgba(255, 250, 242, 0.2);
   opacity: 0.2;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   position: relative;
 
   @media (max-width: $sm) {
@@ -132,5 +132,9 @@
     display: block;
     position: absolute;
     width: 0%;
+  }
+
+  &:hover {
+    opacity: 1 !important;
   }
 }

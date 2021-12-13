@@ -130,6 +130,10 @@
       margin-right: 8px;
       text-transform: lowercase;
     }
+
+    &:hover {
+      color: var(--red);
+    }
   }
 }
 
@@ -154,7 +158,7 @@
 }
 
 .sixthLink {
-  margin-left: 10%;
+  margin-left: 35%;
 }
 
 .menuSocials {

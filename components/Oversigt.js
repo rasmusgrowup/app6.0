@@ -38,7 +38,7 @@ export default function Oversigt() {
           <h2 className={css.oversigtTitle}>Få et indblik i vores</h2>
           <ul className={css.list}>
             <li className={css.listItem}>
-              <Link href='/'>
+              <Link href='#ydelser'>
                 <a className={css.firstLink}>
                   <div className={css.linkItem}>
                     <span className={css.linkNumber}>01.</span>
@@ -62,7 +62,7 @@ export default function Oversigt() {
                 <a className={css.thirdLink}>
                   <div className={css.linkItem}>
                     <span className={css.linkNumber}>03.</span>
-                    Cases
+                    Hjemmesider
                   </div>
                 </a>
               </Link>
@@ -98,6 +98,7 @@ export default function Oversigt() {
               </Link>
             </li>
           </ul>
+          <div className={css.scrollVidere}>Vælg et punkt, eller scroll videre</div>
         </div>
       </section>
     </>

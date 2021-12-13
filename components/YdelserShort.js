@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import css from '../styles/short.module.scss'
+import css from '../styles/ydelser.module.scss'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -68,6 +68,11 @@ export default function YdelserShort() {
       .to(q('.item6 .line'), { width: '100%', duration: delay, ease: 'none' }, '<')
       .set(q('.item6 .line'), {width: '0%'})
       .to(q('.item6'), {opacity: 0.2, duration: 0.6})
+
+      .to(q('.item7'), {opacity: 1, duration: 1})
+      .to(q('.item7 .line'), { width: '100%', duration: delay, ease: 'none' }, '<')
+      .set(q('.item7 .line'), {width: '0%'})
+      .to(q('.item7'), {opacity: 0.2, duration: 0.6})
 
       .to(q('.item1'), {opacity: 1, duration: 1})
 
@@ -149,6 +154,12 @@ export default function YdelserShort() {
             </div>
             <div className={`${css.bottomItem} item6 item`}>
               <span className={css.number}>VI.</span>
+              <h3>SEO</h3>
+              <p>Søgemaskineoptimering af jeres hjemmeside. Forbedr jeres besøgstal, og øg chancen for at sælge flere varer eller ydelser — gøres gennem organisk vækst og annonce-forløb.</p>
+              <span className={`${css.line} line`}></span>
+            </div>
+            <div className={`${css.bottomItem} item7 item`}>
+              <span className={css.number}>VII.</span>
               <h3 style={{ textTransform: 'none' }}>SoMe</h3>
               <p>Publicering af nye opslag, reels, stories, m.m., med henblik på at forbedre jeres brandgenkendelse, få flere følgere og øge jeres salg.</p>
               <span className={`${css.line} line`}></span>

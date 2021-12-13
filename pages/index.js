@@ -1,6 +1,8 @@
 import Hero from '../components/Hero'
 import Os from '../components/Os'
 import YdelserShort from '../components/YdelserShort'
+import SolutionsShort from '../components/SolutionsShort'
+import CasesShort from '../components/CasesShort'
 import Oversigt from '../components/Oversigt'
 import Logo from '../components/Logo'
 import css from '../styles/intro.module.scss'
@@ -46,8 +48,6 @@ export default function Home() {
         </div>
       </div>
       <Hero/>
-      <Oversigt />
-      <YdelserShort />
     </>
   )
 }

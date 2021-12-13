@@ -11,7 +11,7 @@ export default function Nav() {
   return (
     <>
       <nav className={css.navContainer}>
-        <div className={css.navigate}>Navigér</div>
+        <div className={css.navigate} onClick={toggleFunction}>Navigér</div>
         <div className={css.menuActivator} onClick={toggleFunction}>
           <span></span>
           <span></span>
