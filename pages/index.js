@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import Os from '../components/Os'
+import Web from '../components/Web'
 import YdelserShort from '../components/YdelserShort'
 import SolutionsShort from '../components/SolutionsShort'
 import CasesShort from '../components/CasesShort'
@@ -48,6 +49,7 @@ export default function Home() {
         </div>
       </div>
       <Hero/>
+      <Web/>
     </>
   )
 }

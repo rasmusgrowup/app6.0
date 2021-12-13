@@ -20,7 +20,7 @@
 
   @media only screen and (max-width: $sm) {
     display: block;
-    margin: 0 3vw;
+    margin: 0 3vw 4rem;
   }
 }
 
@@ -118,7 +118,7 @@
   li {
     display: flex;
     justify-content: flex-start;
-    margin-right: 1rem;
+    //margin-right: 1rem;
 
     a {
       margin-right: 0.25rem;
@@ -134,11 +134,13 @@
   align-items: center;
   color: var(--light);
   display: flex;
-  font-family: ivypresto-display, serif;
   font-size: 1.1em;
-  //font-style: italic;
-  font-weight: 200;
+  font-weight: 300 !important;
   margin-bottom: 1rem;
+
+  @media (max-width: $sm) {
+    padding: 0 3vw;
+  }
 
   &::before {
     background-color: var(--light);
@@ -146,7 +148,7 @@
     display: inline-block;
     height: 1px;
     margin-right: 12px;
-    width: 3rem;
+    width: 2rem;
   }
 }
 
@@ -160,7 +162,6 @@
   @media only screen and (max-width: $sm) {
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-top: 3rem;
   }
 }
 

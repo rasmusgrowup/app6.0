@@ -42,10 +42,10 @@ export default function Hero(props) {
               <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://www.behance.net/rieholst/projects'><a><Image src={Behance} layout='responsive'/></a></Link>
               </li>
-              <li className={css.icon}>
+              <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://instragram.com/growupstudio.dk'><a><Image src={Instagram} layout='responsive'/></a></Link>
               </li>
-              <li className={css.icon}>
+              <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://www.linkedin.com/company/growup-studio/'><a><Image src={Linkedin} layout='responsive'/></a></Link>
               </li>
             </ul>
@@ -53,7 +53,7 @@ export default function Hero(props) {
         </div>
 
         <div className={css.heroMiddle}>
-          <div className={css.middleTitle}>Udsnit fra hverdagen</div>
+          <div className={css.middleTitle}>Udsnit fra <span className='ivyPrestoItalic'>hverdagen</span></div>
           <div className={css.middleInner}>
             <div className={css.columnOne}>
               <div className={css.columnItem} data-number='1' data-sort='01.'>
