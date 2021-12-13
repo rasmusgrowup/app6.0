@@ -22,7 +22,7 @@ export default function Web() {
       stagger: 0.2,
       scrollTrigger: {
         trigger: caseRef.current,
-        start: 'top 80%',
+        start: 'top 90%',
       }
     })
   }, [])
