@@ -1,21 +1,21 @@
 const data = [
   {
-    title: 'BYHÅNDVÆRKEREN',
+    title: 'Byhåndværkeren',
     year: '2020',
     mediaUrl: '/byhaand.jpg',
   },
   {
-    title: 'BYMICKLEIT',
+    title: 'ByMickleit',
     year: '2018',
     mediaUrl: '/bymickleit.jpg',
   },
   {
-    title: 'CORPUS CARE CLINIC',
+    title: 'Corpus Care Clinic',
     year: '2021',
     mediaUrl: '/corpus.jpg',
   },
   {
-    title: 'COZY LIVING',
+    title: 'Cozy Living',
     year: '2018',
     mediaUrl: '/cozy.jpg',
   },
@@ -25,7 +25,7 @@ const data = [
     mediaUrl: '/dabea.jpg',
   },
   {
-    title: 'DANIEL WAGNER',
+    title: 'Daniel Wagner',
     year: '2022',
     mediaUrl: '/daniel.jpg',
   },
@@ -35,22 +35,22 @@ const data = [
     mediaUrl: '/desmi.jpg',
   },
   {
-    title: 'KARENS BORD',
+    title: 'Karens Bord',
     year: '2020',
     mediaUrl: '/karensbord.jpg',
   },
   {
-    title: 'KIRSTINE MENGEL',
+    title: 'Kirstine Mengel',
     year: '2022',
     mediaUrl: '/kirstine.jpg',
   },
   {
-    title: 'KOLONIHAVERNE',
+    title: 'Kolonihaverne',
     year: '2021',
     mediaUrl: '/kolo.jpg',
   },
   {
-    title: 'LUSTRUP FARMHOUSE',
+    title: 'Lustrup Farmhouse',
     year: '2021',
     mediaUrl: '/lustrup.jpg',
   },
@@ -65,17 +65,17 @@ const data = [
     mediaUrl: '/stoj.jpg',
   },
   {
-    title: 'THE ORGANIC CRAVE',
+    title: 'The Organic Crave',
     year: '2021',
     mediaUrl: '/Udsnit_Organic.jpg',
   },
   {
-    title: 'TINEKHOME',
+    title: 'Tinkehome',
     year: '2021',
     mediaUrl: '/tinekhome.jpg',
   },
   {
-    title: 'TWELVE INCH',
+    title: 'Twelve Inch',
     year: '2020',
     mediaUrl: '/Udsnit_Twelveinch_3.jpg',
   },

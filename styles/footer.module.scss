@@ -1,19 +1,98 @@
 @import './sizes.scss';
 
-.footerInner {
+.mainFooter {
+  align-items: stretch;
   background-color: var(--dark);
   color: var(--light);
-  min-height: 100vh;
-  padding: var(--padding);
+  display: flex;
+  padding: 6vw 6vw 8vw;
   position: relative;
+
+  @media (max-width: $sm) {
+    display: block;
+  }
+}
+
+.footerLeft {
+  flex: 1;
+  max-width: 42%;
+  position: relative;
+
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
+}
+
+.footerRight {
+  flex: 1;
+  margin: 0 0 0 auto;
+  max-width: 50%;
+  position: relative;
+
+  @media (max-width: $sm) {
+    margin: 2rem 0 0;
+    max-width: 100%;
+  }
+}
+
+.footerContact {
+  border-bottom: 3px solid var(--light);
+  display: inline-flex;
+  margin: 0 auto 1rem;
+  text-align: left;
+}
+
+.footerMail {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 1vw;
+  text-transform: uppercase;
+
+  @media (max-width: $sm) {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    color: var(--red);
+  }
+}
+
+.footerSeller {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.footerPhone {
+  margin-bottom: 2rem;
+
+  .phoneLink {
+    display: block;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--red);
+    }
+  }
+
+  span {
+    display: block;
+    max-width: 280px;
+  }
 }
 
 .footerSocials {
   display: flex;
+  margin-top: 2rem;
 
   @media (max-width: $sm) {
+    margin-bottom: 2rem;
     margin-top: 1rem;
-    justify-content: flex-end;
   }
 }
 
@@ -32,28 +111,7 @@
   }
 }
 
-.footerMail {
-  display: block;
-  font-size: 12.5vw;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.address {
-  border-top: 0.5vw solid var(--light);
-  font-size: clamp(14px, 2vw, 42px);
-  padding-top: 2vw;
-  text-align: center;
-}
-
 .footerTop {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
   &:hover {
     .footerMail {
       color: var(--red);
@@ -65,45 +123,58 @@
   }
 }
 
-.footerContact {
-  flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 1vw;
-  overflow: hidden;
-}
-
 .footerBottom {
-  border-top: 1px solid rgba(248, 248, 248, 0.1);
-  bottom: 4vw;
-  color: var(--dark);
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
+  bottom: 0;
+  color: var(--light);
   position: absolute;
-  width: calc(100vw - 8vw);
 
   @media (max-width: $sm) {
-    bottom: 4rem;
-    display: block;
+    position: relative;
   }
 
   p {
+    display: inline-block;
     font-size: 0.8em;
     font-weight: 400;
-    color: grey;
+    margin-right: 0.5rem;
+    opacity: 0.25;
+
+    @media (max-width: $sm) {
+      font-size: 0.7em;
+    }
+
+    &::after {
+      content: '/';
+      margin-left: 0.5rem;
+    }
+
+    &:last-of-type::after {
+      content: '';
+    }
+  }
+}
+
+.images {
+  align-items: flex-end;
+  display: flex;
+  pointer-events: none;
+
+  .smallImage {
+    background-color: var(--black);
+    flex: 1;
+
+    @media (max-width: $sm) {
+      margin-left: 0;
+    }
   }
 
-  .first,
-  .second,
-  .third {
-    margin: 0 0.25rem;
-  }
+  .bigImage {
+    background-color: var(--black);
+    flex: 3;
+    margin-left: 0.5vw;
 
-  @media (max-width: $sm) {
-    .first,
-    .second,
-    .third {
-      text-align: center;
+    @media (max-width: $sm) {
+      margin-left: 1vw;
     }
   }
 }
