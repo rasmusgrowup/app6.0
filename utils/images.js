@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     title: 'BYHÅNDVÆRKEREN',
     year: '2020',
@@ -80,3 +80,4 @@ export default [
     mediaUrl: '/Udsnit_Twelveinch_3.jpg',
   },
 ]
+export default data

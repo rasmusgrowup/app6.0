@@ -28,7 +28,7 @@ const useSize = () => {
   return [ref, dimensions];
 }
 
-export default ({url, title, active, x, y}) => {
+const ImageMedia = ({url, title, active, x, y}) => {
   const [ref, {width, height}] = useSize();
 
   return (
@@ -51,3 +51,4 @@ export default ({url, title, active, x, y}) => {
     </div>
   );
 }
+export default ImageMedia

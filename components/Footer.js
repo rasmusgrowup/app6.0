@@ -13,47 +13,6 @@ export default function Footer() {
   const footer = useRef();
   const inner = useRef();
 
-  useEffect(() => {
-    gsap.set(inner.current, { y: -300, willChange: 'transform' })
-    const animation = gsap.to(inner.current, {
-      yPercent: 0,
-      y: 0,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: footer.current,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: true,
-      }
-    })
-
-    return () => {
-      animation.scrollTrigger.refresh();
-      animation.scrollTrigger.kill();
-    }
-  }, [])
-
-  useEffect(() => {
-    gsap.set(mailRef.current, {
-      yPercent: 110
-    })
-
-    const mailFadeIn = gsap.to(mailRef.current, {
-      yPercent: 0,
-      duration: 2,
-      delay: 0.3,
-      ease: 'Power4.easeOut',
-      scrollTrigger: {
-        trigger: footer.current,
-        start: 'top center',
-      }
-    })
-
-    return () => {
-      mailFadeIn.scrollTrigger.kill();
-    }
-  }, [])
-
   return (
     <>
       <footer className={css.mainFooter} ref={footer}>

@@ -16,6 +16,7 @@ export default function Layout({ children }) {
       <main className={main.main}>
         {children}
       </main>
+      <Footer />
     </>
   )
 }
