@@ -16,26 +16,6 @@ export default function YdelserShort() {
   const q = gsap.utils.selector(bottom);
 
   useEffect(() => {
-    gsap.set(inner.current, { y: -300, willChange: 'transform' })
-    const animation = gsap.to(inner.current, {
-      yPercent: 0,
-      y: 0,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: section.current,
-        start: 'top bottom',
-        end: 'top top',
-        scrub: true,
-      }
-    })
-
-    return () => {
-      animation.scrollTrigger.refresh();
-      animation.scrollTrigger.kill();
-    }
-  }, [])
-
-  useEffect(() => {
     const tl = gsap.timeline({repeat: -1, paused: true});
     const delay = 8
     gsap.set(q('.item1'), {opacity: 1})
@@ -110,14 +90,16 @@ export default function YdelserShort() {
       <section className={css.ydelserShortSection} ref={section} id='ydelser'>
         <div ref={inner}>
           <div className={css.ydelserUpper} ref={upper}>
-            <span className={css.shortNumber}>01.</span>
-            <h2>Vores ydelser har ét fælles formål. At hjælpe jeres virksomhed med at <span className='ivyPrestoItalic'>gro</span></h2>
-            <div className={css.text}>
-              <p>
-              Vi tager den tekniske opsætning og kodning af hjemmesiderne meget seriøst, og (synes vi selv) leverer fremragende produkter i den henseende— men det er god historiefortælling, der sælger jeres varer.<br /><br />Lad os hjælpe jer med at finde de fede budskaber, der skaber relevans og tryghed hos jeres potentielle kunder — og lad os omsætte disse til smukke billeder og videoer, der kan bruges på jeres hjemmeside eller SoMe kanaler.
-              </p>
-              <div className={css.contact}>
-                  <Link href='mailto:hello@growupstudio.dk'><a>Arbejd med os</a></Link>
+            <div className={css.upperTeaser}>Vores<span className='ivyPrestoItalic'>ydelser</span></div>
+            <div className={css.textWrapper}>
+              <h2 className={css.upperTitle}>Vores ydelser har ét fælles formål. At hjælpe jeres virksomhed med at <span className='ivyPrestoItalic'>gro</span></h2>
+              <div className={css.text}>
+                <p>
+                Vi tager den tekniske opsætning og kodning af hjemmesiderne meget seriøst, og (synes vi selv) leverer fremragende produkter i den henseende— men det er god historiefortælling, der sælger jeres varer.<br /><br />Lad os hjælpe jer med at finde de fede budskaber, der skaber relevans og tryghed hos jeres potentielle kunder — og lad os omsætte disse til smukke billeder og videoer, der kan bruges på jeres hjemmeside eller SoMe kanaler.
+                </p>
+                <div className={css.contact} style={{ display: 'none' }}>
+                    <Link href='mailto:hello@growupstudio.dk'><a>Arbejd med os</a></Link>
+                </div>
               </div>
             </div>
           </div>

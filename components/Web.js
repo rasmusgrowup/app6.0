@@ -39,6 +39,10 @@ export default function Web() {
         </div>
         <div className={css.bottom}>
           <div className={css.case} data='1' ref={caseRef}>
+            <ul className={css.caseNav}>
+              <li>Forside</li>
+              <li>Produktside</li>
+            </ul>
             <div className={css.caseInner}>
               <div className={`${css.caseWide} caseImage`} data='left' >
                 <Image src={PralDesktop} quality='100'/>

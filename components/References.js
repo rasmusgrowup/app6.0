@@ -33,6 +33,7 @@ export default function References() {
           <div className={css.titleList}>
             {images.map(({title, year}, index) => (
               <Title
+                key={title}
                 title={title}
                 year={year}
                 setActiveIndex={setActiveIndex}
@@ -41,11 +42,11 @@ export default function References() {
             ))}
           </div>
           <div className={css.imageList}>
-            {images.map(({mediaUrl}, index) => {
+            {images.map(({mediaUrl, title}, index) => {
               const isActive = index === activeIndex
               const xPos = isActive ? x: 0;
               const yPos = isActive ? y: 0;
-              return <Media url={mediaUrl} active={isActive} x={xPos} y={yPos}/>
+              return <Media key={title} url={mediaUrl} active={isActive} x={xPos} y={yPos}/>
             })}
           </div>
         </div>

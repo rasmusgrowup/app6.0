@@ -2,7 +2,7 @@ export default [
   {
     title: 'BYHÅNDVÆRKEREN',
     year: '2020',
-    mediaUrl: '/bymickleit.jpg',
+    mediaUrl: '/byhaand.jpg',
   },
   {
     title: 'BYMICKLEIT',
@@ -42,12 +42,12 @@ export default [
   {
     title: 'KIRSTINE MENGEL',
     year: '2022',
-    mediaUrl: '/bymickleit.jpg',
+    mediaUrl: '/kirstine.jpg',
   },
   {
     title: 'KOLONIHAVERNE',
     year: '2021',
-    mediaUrl: '/kirstine.jpg',
+    mediaUrl: '/kolo.jpg',
   },
   {
     title: 'LUSTRUP FARMHOUSE',
@@ -77,6 +77,6 @@ export default [
   {
     title: 'TWELVE INCH',
     year: '2020',
-    mediaUrl: '/twelve-inch.jpg',
+    mediaUrl: '/Udsnit_Twelveinch_3.jpg',
   },
 ]

@@ -27,9 +27,25 @@
   }
 }
 
-.ydelserUpper {
-  align-items: stretch;
+.upperTeaser {
+  align-items: center;
+  color: var(--light);
   display: flex;
+  font-size: 1.1em;
+  font-weight: 300 !important;
+  margin-bottom: 1rem;
+
+  &::before {
+    background-color: var(--light);
+    content: '';
+    display: inline-block;
+    height: 1px;
+    margin-right: 12px;
+    width: 2rem;
+  }
+}
+
+.ydelserUpper {
   margin: 0 auto;
   max-width: 1240px;
   padding: 6rem 0 2rem;
@@ -42,13 +58,23 @@
   @media only screen and (min-width: $m) {
     padding: 6vw 4rem 6vw 4rem;
   }
+}
 
-  h2 {
-    font-size: clamp(42px, 5.2vw, 4rem);
+.textWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .upperTitle {
+    font-size: clamp(42px, 5.5vw, 4rem);
     flex: 3;
     line-height: 1;
-    margin-right: 17.5vw;
-    max-width: 50%;
+    margin-right: 4rem;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 
     @media (max-width: $sm) {
       margin-bottom: 2rem;
@@ -63,6 +89,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 0.5rem;
+    max-width: 32%;
+    vertical-align: top;
   }
 
   .contact {

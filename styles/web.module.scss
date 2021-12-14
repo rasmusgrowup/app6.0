@@ -69,7 +69,7 @@
 }
 
 .bottom {
-  margin: 6rem auto;
+  margin: 6rem auto 0;
   max-width: 1024px;
 
   @media (max-width: $sm) {
@@ -80,6 +80,28 @@
 .case {
   margin-top: 6rem;
   position: relative;
+}
+
+.caseNav {
+  color: var(--light);
+  list-style: none;
+  margin: 0;
+  margin-bottom: 0.25rem;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 0.25rem;
+
+    &:last-of-type {
+      opacity: 0.2;
+
+      &::before {
+        content: '/';
+        margin-right: 0.25rem;
+      }
+    }
+  }
 }
 
 .explainor {
