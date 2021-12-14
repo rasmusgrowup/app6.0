@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import Os from '../components/Os'
 import Web from '../components/Web'
+import References from '../components/References'
 import YdelserShort from '../components/YdelserShort'
 import SolutionsShort from '../components/SolutionsShort'
 import CasesShort from '../components/CasesShort'
@@ -50,6 +51,7 @@ export default function Home() {
       </div>
       <Hero/>
       <Web/>
+      <References />
     </>
   )
 }

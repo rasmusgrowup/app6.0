@@ -31,7 +31,7 @@ export default function Web() {
     <>
       <section className={css.webSection}>
         <div className={css.upper}>
-          <div className={css.upperTeaser}>Hvad vi gør<span className='ivyPrestoItalic'>anderledes</span></div>
+          <div className={css.upperTeaser}>Hvad vi<span className='ivyPrestoItalic'>tilbyder</span></div>
           <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Gå fra tom skal til <span className='ivyPrestoItalic'>færdigt produkt</span> med vores skræddersyede forløb.</h2>
           <p className={css.upperText}>Vi laver jeres hjemmeside efter en afprøvet opskrift, som vi selv har kreeret, og som er baseret på erfaringer fra tidligere projekter. Vi starter med et skelet, der passer til jeres virksomhed, og fylder herefter hjemmesiden op med en masse skønt indhold. Indholdet kan være billeder, videoer og tekster, og har til formål at skabe en spændende historiefortælling, søgemaskineoptimere hjemmesiden og sælge jeres varer og ydelser.</p>
           <p className={css.upperText}>
@@ -58,7 +58,7 @@ export default function Web() {
             <div className={css.reviewer}>Pernille Albers, PRAL</div>
           </div>
           <div className={css.caseInfo}>
-            <span><Link href='https://pral.dk'><a>www.pral.dk</a></Link></span>
+            <span><Link href='https://pral.dk'><a target='_blank'>www.pral.dk</a></Link></span>
             <span>Shopify-webshop</span>
             <span>Lavet i 2021</span>
           </div>
