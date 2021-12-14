@@ -32,10 +32,8 @@ export default function Web() {
       <section className={css.webSection}>
         <div className={css.upper}>
           <div className={css.upperTeaser}>Hvad vi<span className='ivyPrestoItalic'>tilbyder</span></div>
-          <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Gå fra tom skal til <span className='ivyPrestoItalic'>færdigt produkt</span> med vores skræddersyede forløb.</h2>
-          <p className={css.upperText}>Vi laver jeres hjemmeside efter en afprøvet opskrift, som vi selv har kreeret, og som er baseret på erfaringer fra tidligere projekter. Vi starter med et skelet, der passer til jeres virksomhed, og fylder herefter hjemmesiden op med en masse skønt indhold. Indholdet kan være billeder, videoer og tekster, og har til formål at skabe en spændende historiefortælling, søgemaskineoptimere hjemmesiden og sælge jeres varer og ydelser.</p>
-          <p className={css.upperText}>
-            Da vi kan starte med et skelet — som jo iøvrigt er afprøvet på andre virksomheder — kan vi spare en del omkostninger i opstartsfasen af projektet. Hvilket naturligvis betyder, at vi kan give jer mere værdi, for jeres penge. Selvom jeres hjemmeside bliver lavet efter en skabelon, betyder det ikke, at den kommer til at ligne alle andres — tværtimod. Vi skræddersyer jeres hjemmeside, ved at pynte den op med unikke billede, tekst- og videomaterialer.</p>
+          <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Vi hjælper dem fra start-up-fase til<span className='ivyPrestoItalic'>fuldvoksent brand</span> med vores skræddersyede forløb.</h2>
+          <p className={css.upperText}>Vores produkter er designet til — og prissat efter — at vi kan hjælpe start-ups og etablerede brands med at løse deres kreative udfordringer. Vores tre hovedydelser udgør; 1) skræddersyet indhold til hjemmesider, netbutikker og sociale medier; 2) visuelt design til branding af produkter og virksomheder, og 3) webudvikling i React og Shopify, med sidenløbende søgemaskineoptimering. Læs mere herunder.</p>
         </div>
         <div className={css.bottom}>
           <div className={css.case} data='1' ref={caseRef}>
