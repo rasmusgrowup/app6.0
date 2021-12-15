@@ -66,7 +66,7 @@ export default function Hero(props) {
                   height='100%'
                   style={{ objectFit: 'cover' }}
                   >
-                  <source src={'/TinekhomeVideoPlaid.mp4'} type='video/mp4' />
+                  <source src={'/Tinekhome_plaid_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
               <div className={css.columnItem} data-number='2' data-sort='02.'>
@@ -88,7 +88,7 @@ export default function Hero(props) {
                   height='100%'
                   style={{ objectFit: 'cover' }}
                   >
-                  <source src={'/OrganicInstaPost.mp4'} type='video/mp4' />
+                  <source src={'/OrganicBag_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
               <div className={css.columnItem} data-number='4' data-sort='04.'>
@@ -170,7 +170,7 @@ export default function Hero(props) {
                   height='100%'
                   style={{ objectFit: 'cover' }}
                   >
-                  <source src={'/OrganicInstaPost_4.mp4'} type='video/mp4' />
+                  <source src={'/OrganicModel_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
               <div className={css.columnItem} data-number='2' data-sort='12.'>
@@ -203,7 +203,7 @@ export default function Hero(props) {
                   height='100%'
                   style={{ objectFit: 'cover' }}
                   >
-                  <source src={'/ByMickleitVideo.mp4'} type='video/mp4' />
+                  <source src={'/ByMickleit_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
               <div className={css.columnItem} data-number='2' data-sort='15.'>
@@ -225,7 +225,7 @@ export default function Hero(props) {
                   height='100%'
                   style={{ objectFit: 'cover' }}
                   >
-                  <source src={'/OrganicInstaPost_3.mp4'} type='video/mp4' />
+                  <source src={'/OrganicBar_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
               <div className={css.columnItem} data-number='3' data-sort='17.'>

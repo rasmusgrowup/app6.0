@@ -32,7 +32,7 @@ export default function Web() {
       <section className={css.webSection}>
         <div className={css.upper}>
           <div className={css.upperTeaser}>Hvad vi<span className='ivyPrestoItalic'>tilbyder</span></div>
-          <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Vi hjælper dem fra start-up-fase til<span className='ivyPrestoItalic'>fuldvoksent brand</span> med vores skræddersyede forløb.</h2>
+          <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Vi hjælper dem fra start-up til<span className='ivyPrestoItalic'>voksent brand</span> med vores value-for-money produkter.</h2>
           <p className={css.upperText}>Vores produkter er designet til — og prissat efter — at vi kan hjælpe start-ups og etablerede brands med at løse deres kreative udfordringer. Vores tre hovedydelser udgør; 1) skræddersyet indhold til hjemmesider, netbutikker og sociale medier; 2) visuelt design til branding af produkter og virksomheder, og 3) webudvikling i React og Shopify, med sidenløbende søgemaskineoptimering. Læs mere herunder.</p>
         </div>
         <div className={css.bottom}>
