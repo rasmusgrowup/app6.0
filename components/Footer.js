@@ -16,7 +16,7 @@ export default function Footer() {
       <footer className={css.mainFooter} ref={footer}>
         <div className={css.footerLeft}>
           <div className={css.footerContact}>
-            <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Samarbejd med os</a></Link>
+            <Link href='mailto:hello@growupstudio.dk'><a className={css.footerMail} ref={mailRef}>Arbejd med os</a></Link>
           </div>
           <p className={css.footerSeller}>Kontakt os, hvis i  leder efter hjælp til art direction, branding, hjemmesider, netbutikker, SEO eller SoMe, og i samtidig har et ønske om at finde en seriøst og pro-aktiv samarbejdspartner, der har jeres bedste får øje.</p>
           <div className={css.footerPhone} id='rie'>

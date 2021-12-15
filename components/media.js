@@ -12,15 +12,15 @@ const ImageMedia = ({url, title, active, x, y}) => {
       }}
     >
       <div className={css.imageInner}>
-      <Image
-        src={url}
-        layout='fill'
-        className={active ? `${css.image } ${css.isActive}` : `${css.image}`}
-        alt={title}
-        objectFit='cover'
-        objectPosition='center'
-        quality='75'
-      />
+        <Image
+          src={url}
+          layout='fill'
+          className={active ? `${css.image } ${css.isActive}` : `${css.image}`}
+          alt={title}
+          objectFit='cover'
+          objectPosition='center'
+          quality='75'
+        />
       </div>
     </div>
   );

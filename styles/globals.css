@@ -57,8 +57,9 @@ p {
   font-family: ivypresto-display, serif;
   font-style: italic;
   font-weight: 400;
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
+  letter-spacing: normal;
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
 }
 
 :root {

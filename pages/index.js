@@ -1,8 +1,7 @@
 import Hero from '../components/Hero'
 import Os from '../components/Os'
-import Web from '../components/Web'
+import Products from '../components/Products'
 import References from '../components/References'
-import Oversigt from '../components/Oversigt'
 import Logo from '../components/Logo'
 import css from '../styles/intro.module.scss'
 
@@ -46,8 +45,8 @@ export default function Home() {
           <Logo />
         </div>
       </div>
-      <Hero/>
-      <Web/>
+      <Hero />
+      <Products />
       <References />
     </>
   )
