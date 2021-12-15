@@ -72,7 +72,7 @@
   padding: 6rem 2vw;
   position: relative;
 
-  @media only screen and (min-width: $m) {
+  @media only screen and (min-width: $sm) {
     padding: 10vw 6vw;
   }
 }
@@ -158,7 +158,7 @@
 }
 
 .sixthLink {
-  margin-left: 35%;
+  margin-left: 25%;
 }
 
 .menuSocials {
@@ -176,6 +176,7 @@
     align-items: flex-start;
     color: var(--light);
     display: flex;
+    font-size: var(--fontSize);
     line-height: 1;
     margin-right: 1rem;
     padding-bottom: 2px;

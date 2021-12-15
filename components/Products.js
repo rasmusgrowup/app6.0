@@ -80,13 +80,13 @@ export default function Products() {
           </div>
           <div className={css.contentText}>
             <h3 className={css.contentTeaser}>Skræddersyet indhold</h3>
-            <p className={css.contentP}>Skræddersyet indhold til jeres hjemmesider og sociale medier er med til at kommunikere jeres brandværdier videre til jeres kunder og følgere. Det er derfor vigtigt at have et skarpt visuelt univers, at arbejde ud fra. Som Art Directors skaber vi billeder, grafik og video, der netop skal kommunikere jeres budskaber ud, gennem jeres hjemmeside eller sociale medier.<br/><br/>Synes i jeres visuelle univers halter lidt, eller er det blot tid til fornyelse? Så er Growup et godt bud på en samarbejdspartner, der kan give jer nye fjer på.</p>
+            <p className={css.contentP}>Skræddersyet indhold til jeres hjemmesider og sociale medier er med til at kommunikere jeres brandværdier videre til jeres kunder og følgere. Det er derfor vigtigt at have et skarpt visuelt univers, at arbejde ud fra. Som Art Directors skaber vi billeder, grafik og video, der netop skal kommunikere jeres budskaber ud, gennem jeres hjemmeside eller sociale medier.</p>
           </div>
         </div>
         <div className={css.branding}>
         <div className={css.brandingText}>
           <h3 className={css.brandingTeaser}>Branding</h3>
-          <p className={css.brandingP}>Vi har allerede snakket en del om visuelle identiteter — og det gør vi fordi det er super vigtigt at have styr på. <br/><br/>Når vi arbejder med branding for jeres virksomhed, går det kort sagt ud på, at vi skal få jeres produkter til at skille sig ud fra mængden hos forbrugerne, så de køber jeres produkter, fremfor jeres konkurrenters. Det gør vi ved at fremhæve jeres særlige kvaliteter og værdier, gennem smuk og kløgtig kommunikation.</p>
+          <p className={css.brandingP}>Når vi arbejder med branding for jeres virksomhed, går det kort sagt ud på, at vi skal få jeres produkter til at skille sig ud fra mængden hos forbrugerne, så de køber jeres produkter, fremfor jeres konkurrenters. Det gør vi ved at fremhæve jeres særlige kvaliteter og værdier, gennem smuk og kløgtig kommunikation.</p>
         </div>
           <div className={css.brandingImages}>
             <div className={css.columnOne}>

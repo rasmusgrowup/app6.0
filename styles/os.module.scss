@@ -8,7 +8,7 @@
   z-index: 2;
   width: 100%;
 
-  @media only screen and (min-width: $m) {
+  @media only screen and (min-width: $sm) {
     padding: 0 var(--leftpadding) 6vw var(--rightpadding);
   }
 }

@@ -4,17 +4,21 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  left: 0;
+  left: 4vw;
   mix-blend-mode: difference;
-  padding: 0 4vw;
   position: absolute;
   top: 4vw;
-  width: 100%;
+  width: 92vw;
   z-index: 99;
 
+  @media (max-width: $l) {
+    left: 2vw;
+    width: 96vw;
+  }
+
   @media only screen and (max-width: $sm) {
-    padding: 0 3vw;
-    top: 1rem;
+    padding: 0 2vw;
+    top: 4vw;
   }
 }
 
@@ -45,12 +49,6 @@
   }
 }
 
-.navigate {
-  color: var(--sand);
-  margin-right: 1rem;
-  cursor: pointer;
-}
-
 .navLink {
   color: var(--sand);
   font-size: clamp(14px, 1.25vw, 36px);
@@ -67,6 +65,13 @@
 
 .activeNavLink {
   text-decoration: underline;
+}
+
+.navigate {
+  color: var(--sand);
+  font-size: var(--fontSize);
+  margin-right: 2vw;
+  cursor: pointer;
 }
 
 .menuActivator {
@@ -109,25 +114,5 @@
 
   &:active {
     transform: scale(0.8);
-  }
-}
-
-.menuButton {
-  background-color: var(--dark);
-  border: 1px solid var(--sand);
-  border-radius: 25vw;
-  color: var(--sand);
-  cursor: pointer;
-  display: inline-block;
-  font-size: clamp(14px, 1vw, 36px);
-  line-height: 1;
-  overflow: hidden;
-  padding: 1vw;
-  position: relative;
-  text-transform: uppercase;
-  z-index: 1;
-
-  @media only screen and (max-width: $sm) {
-    padding: 2vw;
   }
 }

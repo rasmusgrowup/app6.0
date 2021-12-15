@@ -5,11 +5,17 @@
   background-color: var(--dark);
   color: var(--light);
   display: flex;
-  padding: 6vw;
+  padding: 4vw;
   position: relative;
+
+  @media (max-width: $l) {
+    align-items: flex-end;
+    padding: 2vw;
+  }
 
   @media (max-width: $sm) {
     display: block;
+    padding-bottom: 16vw;
   }
 }
 
@@ -18,8 +24,14 @@
   max-width: 42%;
   position: relative;
 
+  @media (max-width: $l) {
+    max-width: 50%;
+    padding-bottom: 8vw;
+  }
+
   @media (max-width: $sm) {
     max-width: 100%;
+    padding-bottom: 0;
   }
 }
 
@@ -28,6 +40,10 @@
   margin: 0 0 0 auto;
   max-width: 50%;
   position: relative;
+
+  @media (max-width: $l) {
+    max-width: 46%;
+  }
 
   @media (max-width: $sm) {
     margin: 2rem 0 0;
@@ -44,15 +60,19 @@
 
 .footerMail {
   display: block;
-  font-size: 2.5rem;
+  font-size: 3.6vw;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1;
   margin-bottom: 1vw;
   text-transform: uppercase;
 
+  @media (max-width: $l) {
+    font-size: 3vw;
+  }
+
   @media (max-width: $sm) {
-    font-size: 2rem;
+    font-size: 8vw;
   }
 
   &:hover {
@@ -62,17 +82,25 @@
 
 .footerSeller {
   line-height: 1.5;
-  margin-bottom: 2rem;
+  margin-bottom: 2vw;
+
+  @media (max-width: $sm) {
+    margin-bottom: 12vw;
+  }
 }
 
 .footerPhone {
-  margin-bottom: 2rem;
+  margin-bottom: 2vw;
+
+  @media (max-width: $sm) {
+    margin-bottom: 12vw;
+  }
 
   .phoneLink {
     display: block;
-    font-size: 1.5em;
+    font-size: clamp(21px, 2vw, 3rem);
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1vw;
     text-decoration: underline;
 
     &:hover {
@@ -82,7 +110,12 @@
 
   span {
     display: block;
-    max-width: 280px;
+    font-size: var(--fontSize);
+    max-width: 18vw;
+
+    @media (max-width: $sm) {
+      max-width: 80%;
+    }
   }
 }
 
@@ -100,6 +133,7 @@
   align-items: flex-start;
   display: flex;
   line-height: 1;
+  font-size: var(--fontSize);
   margin-right: 1rem;
 
   .socialItemLink {
@@ -134,14 +168,10 @@
 
   p {
     display: inline-block;
-    font-size: 0.8em;
+    font-size: clamp(12px, 0.9vw, 2rem);
     font-weight: 400;
     margin-right: 0.5rem;
     opacity: 0.25;
-
-    @media (max-width: $sm) {
-      font-size: 0.7em;
-    }
 
     &::after {
       content: '/';
@@ -163,6 +193,10 @@
     background-color: var(--black);
     flex: 1;
 
+    @media (max-width: $l) {
+      display: none;
+    }
+
     @media (max-width: $sm) {
       margin-left: 0;
     }
@@ -173,8 +207,8 @@
     flex: 3;
     margin-left: 0.5vw;
 
-    @media (max-width: $sm) {
-      margin-left: 1vw;
+    @media (max-width: $l) {
+      margin-left: 0;
     }
   }
 }

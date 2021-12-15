@@ -7,20 +7,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  min-height: 100vh;
+  margin: 16vw auto;
   position: relative;
   z-index: 90;
-  width: 100%;
+  width: 92vw;
+
+  @media (max-width: $l) {
+    width: 96vw;
+  }
 }
 
 .upperTeaser {
   align-items: center;
   color: var(--light);
   display: flex;
-  font-size: 1.1em;
+  font-size: var(--teaser);
   font-weight: 300 !important;
-  margin-bottom: 1rem;
+  margin-bottom: 2vw;
 
   &::before {
     background-color: var(--light);
@@ -34,7 +37,6 @@
 
 .inner {
   margin: 0 auto;
-  max-width: calc(100% - 12vw);
   position: relative;
   width: 100%;
 }
@@ -85,17 +87,22 @@
 
 .imageTitle {
   display: inline-flex;
-  font-size: clamp(21px, 3.35vw, 5em);
-  margin-right: 1rem;
+  font-size: 3.35vw;
+  margin-right: 1vw;
+
+  @media (max-width: $l) {
+    font-size: 3.6vw;
+  }
 
   @media (max-width: $sm) {
+    font-size: 6.5vw;
     display: flex;
   }
 
   &::after {
     content: '/';
     font-weight: 200;
-    margin-left: 1rem;
+    margin-left: 1vw;
     opacity: 0.1;
 
     @media (max-width: $sm) {
@@ -129,9 +136,9 @@
 }
 
 .imageInner {
-  height: 375px;
+  height: 28vw;
   position: relative;
-  width: 300px;
+  width: 20vw;
   z-index: 0;
 
   @media (max-width: $sm) {
