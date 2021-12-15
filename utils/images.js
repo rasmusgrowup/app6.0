@@ -70,7 +70,7 @@ const data = [
     mediaUrl: '/Udsnit_Organic.jpg',
   },
   {
-    title: 'Tinkehome',
+    title: 'Tinekhome',
     year: '2021',
     mediaUrl: '/tinekhome.jpg',
   },

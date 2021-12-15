@@ -15,7 +15,7 @@ export default function Menu() {
   const menuItems = useRef(null);
   const socials = useRef(null);
   const q = gsap.utils.selector(menuItems);
-  const { toggle, toggleFunction} = useContext(MenuContext);
+  const { toggle, toggleFunction } = useContext(MenuContext);
   const tl = useRef();
 
   useEffect(() => {

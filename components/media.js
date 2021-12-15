@@ -2,43 +2,16 @@ import React, { useState, useCallback, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import css from '../styles/references.module.scss'
 
-const getDimensionObject = (node) => {
-  const rect = node.getBoundingClientRect();
-
-  return {
-    width: rect.width,
-    height: rect.height
-  }
-}
-
-const useSize = () => {
-  const [dimensions, setDimensions] = useState({})
-  const [node, setNode] = useState(null);
-  const ref = useCallback(node=>{
-    setNode(node)
-  }, [])
-
-  useEffect(() => {
-    if(node) {
-      const measure = () => setDimensions(getDimensionObject(node));
-      measure();
-    }
-  }, [node])
-
-  return [ref, dimensions];
-}
-
 const ImageMedia = ({url, title, active, x, y}) => {
-  const [ref, {width, height}] = useSize();
-
   return (
     <div
-      className={css.imageInner}
-      ref={ref}
+      className={css.imageWrapper}
       style={{
-        transform: `translate(${x - width/2}px, ${y - height/2}px)`
+        left: `${x}px`,
+        top: `${y}px`
       }}
     >
+      <div className={css.imageInner}>
       <Image
         src={url}
         layout='fill'
@@ -48,6 +21,7 @@ const ImageMedia = ({url, title, active, x, y}) => {
         objectPosition='center'
         quality='75'
       />
+      </div>
     </div>
   );
 }

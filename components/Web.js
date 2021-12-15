@@ -32,8 +32,9 @@ export default function Web() {
       <section className={css.webSection}>
         <div className={css.upper}>
           <div className={css.upperTeaser}>Hvad vi<span className='ivyPrestoItalic'>tilbyder</span></div>
-          <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Vi hjælper dem fra start-up til<span className='ivyPrestoItalic'>voksent brand</span> med vores value-for-money produkter.</h2>
-          <p className={css.upperText}>Vores produkter er designet til — og prissat efter — at vi kan hjælpe start-ups og etablerede brands med at løse deres kreative udfordringer. Vores tre hovedydelser udgør; 1) skræddersyet indhold til hjemmesider, netbutikker og sociale medier; 2) visuelt design til branding af produkter og virksomheder, og 3) webudvikling i React og Shopify, med sidenløbende søgemaskineoptimering. Læs mere herunder.</p>
+          <h2 className={css.upperTitle}>Vi tager vores kunders ønsker og idéer, og fører dem ud i livet. Vi løser deres kreative udfordringer, og hjælper dem et skridt videre mod at blive et<span className='ivyPrestoItalic'>voksent brand.</span></h2>
+          <p className={css.upperText}>Vores produkter er designet til at vi kan hjælpe start-ups og etablerede brands med at løse deres kreative udfordringer. Vi er specialister i at udtænke og levere skræddersyet indhold til hjemmesider, netbutikker og sociale medier, arbejde med visuelt design til branding af produkter og virksomheder, søgemaskine-optimering og webudvikling i React og Shopify.</p>
+          <p className={css.upperText}>Vi forsøger med andre ord at tilbyde en suite af produkter, der kan løse jeres digitale og kreative udfordringer. Læs mere herunder.</p>
         </div>
         <div className={css.bottom}>
           <div className={css.case} data='1' ref={caseRef}>
