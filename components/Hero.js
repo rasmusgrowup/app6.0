@@ -29,15 +29,15 @@ export default function Hero(props) {
       <section className={css.heroSection}>
         <div className={css.heroTop}>
           <h1 className={css.heading}>
-            Kreatører af <span className='ivyPrestoItalic'>eventyrlige</span> hjemmesider og webshops, mestre af Shopify, SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>kløgtig</span> branding
+            Kreatører af <span className='ivyPrestoItalic'>fantastiske</span> hjemmesider og webshops, mestre af Shopify, SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>opfindsom</span> branding
           </h1>
           <div className={css.aside}>
             <div className={css.text}>
-              <p>Foruden at levere responsive og søgemaskineoptimerede hjemmesider og netbutikker, udvikler vi unikke visuelle identiteter, skaber spændende billede- og videoindhold, og kløgtig kommunikation. Vi er desuden meget mere end et traditionelt design bureau — vi er også jeres Ecommerce Manager eller SoMe-ansvarlig.</p>
+              <p>Foruden at levere responsive og søgemaskineoptimerede hjemmesider og netbutikker, udvikler vi unikke visuelle identiteter, skaber spændende billede- og videoindhold, og opfindsom kommunikation. Vi er desuden meget mere end et traditionelt designbureau — vi er også jeres Ecommerce Manager eller SoMe-ansvarlig.</p>
             </div>
             <ul className={css.contact}>
               <li className={css.mail}>
-                <Link href='mailto:hello@growupstudio.dk'><a>Arbejd med os</a></Link>
+                <Link href='mailto:hello@growupstudio.dk'><a>Kontakt os</a></Link>
               </li>
               <li className={css.icon} style={{ display: 'none' }}>
                 <Link href='https://www.behance.net/rieholst/projects'><a><Image src={Behance} layout='responsive'/></a></Link>
@@ -53,10 +53,10 @@ export default function Hero(props) {
         </div>
 
         <div className={css.heroMiddle}>
-          <div className={css.middleTitle}>Udsnit fra <span className='ivyPrestoItalic'>hverdagen</span></div>
+          <div className={css.middleTitle}><span>Nyeste</span><span className='ivyPrestoItalic'>opgaver</span></div>
           <div className={css.middleInner}>
             <div className={css.columnOne}>
-              <div className={css.columnItem} data-number='1' data-sort='01.'>
+              <div className={css.columnItem} data-number='1' data-sort='01.' data-content='Art Direction for Tinekhome'>
                 <video
                   autoPlay
                   muted
@@ -69,7 +69,7 @@ export default function Hero(props) {
                   <source src={'/Tinekhome_plaid_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
-              <div className={css.columnItem} data-number='2' data-sort='02.'>
+              <div className={css.columnItem} data-number='2' data-sort='02.' data-content='Art Direction for The Organic Crave Company'>
                 <Image
                   src={OrganicBagomOne}
                   layout='fill'
@@ -78,7 +78,7 @@ export default function Hero(props) {
                   quality='100'
                 />
               </div>
-              <div className={css.columnItem} data-number='3' data-sort='03.'>
+              <div className={css.columnItem} data-number='3' data-sort='03.' data-content='SoMe content til The Organic Crave Company ... @theorganiccrave'>
                 <video
                   autoPlay
                   muted
@@ -91,7 +91,7 @@ export default function Hero(props) {
                   <source src={'/OrganicBag_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
-              <div className={css.columnItem} data-number='4' data-sort='04.'>
+              <div className={css.columnItem} data-number='4' data-sort='04.' data-content='Art Direction for Twelve inch'>
                 <Image
                   src={TwelveInchSix}
                   layout='fill'
@@ -102,7 +102,7 @@ export default function Hero(props) {
               </div>
             </div>
             <div className={css.columnTwo}>
-              <div className={css.columnItem} data-number='1' data-sort='05.'>
+              <div className={css.columnItem} data-number='1' data-sort='05.' data-content='Art Direction for Twelve inch'>
                 <Image
                   src={TwelveInchThree}
                   layout='fill'
@@ -112,7 +112,7 @@ export default function Hero(props) {
                   priority='true'
                 />
               </div>
-              <div className={css.columnItem} data-number='2' data-sort='06.'>
+              <div className={css.columnItem} data-number='2' data-sort='06.' data-content='Art Direction for The Organic Crave Company'>
                 <Image
                   src={OrganicBagomThree}
                   layout='fill'
@@ -121,7 +121,7 @@ export default function Hero(props) {
                   quality='100'
                 />
               </div>
-              <div className={css.columnItem} data-number='3' data-sort='07.'>
+              <div className={css.columnItem} data-number='3' data-sort='07.' data-content='Art Direction til billedserie for Twelve inch'>
                 <Image
                   src={TwelveInchEight}
                   layout='fill'
@@ -130,7 +130,7 @@ export default function Hero(props) {
                   quality='100'
                 />
               </div>
-              <div className={css.columnItem} data-number='4' data-sort='08.'>
+              <div className={css.columnItem} data-number='4' data-sort='08.' data-content='Art Direction til billedserie for Twelve inch'>
                 <Image
                   src={TwelveInchOne}
                   layout='fill'
@@ -139,7 +139,7 @@ export default function Hero(props) {
                   quality='100'
                 />
               </div>
-              <div className={css.columnItem} data-number='5' data-sort='09.'>
+              <div className={css.columnItem} data-number='5' data-sort='09.' data-content='Logodesign for Chef Jen'>
                 <Image
                   src={ChefJenSkilt}
                   layout='fill'
@@ -150,7 +150,7 @@ export default function Hero(props) {
               </div>
             </div>
             <div className={css.columnThree}>
-              <div className={css.columnItem} data-number='1' data-sort='10.'>
+              <div className={css.columnItem} data-number='1' data-sort='10.' data-content='Billedserie til www.theorganiccrave.com'>
                 <Image
                   src={Organic}
                   layout='fill'
@@ -160,7 +160,7 @@ export default function Hero(props) {
                   priority='true'
                 />
               </div>
-              <div className={css.columnItem} data-number='3' data-sort='11.'>
+              <div className={css.columnItem} data-number='3' data-sort='11.' data-content='Videoinstruering for The Organic Crave Company'>
                 <video
                   autoPlay
                   muted
@@ -173,7 +173,7 @@ export default function Hero(props) {
                   <source src={'/OrganicModel_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
-              <div className={css.columnItem} data-number='2' data-sort='12.'>
+              <div className={css.columnItem} data-number='2' data-sort='12.' data-content='Videoinstruering for The Organic Crave Company'>
                 <Image
                   src={OrganicBagomTwo}
                   layout='fill'
@@ -182,7 +182,7 @@ export default function Hero(props) {
                   quality='100'
                 />
               </div>
-              <div className={css.columnItem} data-number='3' data-sort='13.'>
+              <div className={css.columnItem} data-number='3' data-sort='13.' data-content='SoMe content til The Organic Crave Company ... @theorganiccrave'>
                 <Image
                   src={OrganicTwo}
                   layout='fill'
@@ -193,7 +193,7 @@ export default function Hero(props) {
               </div>
             </div>
             <div className={css.columnFour}>
-              <div className={css.columnItem} data-number='1' data-sort='14.'>
+              <div className={css.columnItem} data-number='1' data-sort='14.' data-content='Videoinstruering for ByMickleit'>
                 <video
                   autoPlay
                   muted
@@ -206,7 +206,7 @@ export default function Hero(props) {
                   <source src={'/ByMickleit_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
-              <div className={css.columnItem} data-number='2' data-sort='15.'>
+              <div className={css.columnItem} data-number='2' data-sort='15.' data-content='Art Direction for ByMickleit'>
                 <Image
                   src={ByMickleit}
                   layout='fill'
@@ -215,7 +215,7 @@ export default function Hero(props) {
                   quality='100'
                 />
               </div>
-              <div className={css.columnItem} data-number='2' data-sort='16.'>
+              <div className={css.columnItem} data-number='2' data-sort='16.' data-content='SoMe content til The Organic Crave Company ... @theorganiccrave'>
                 <video
                   autoPlay
                   muted
@@ -228,7 +228,7 @@ export default function Hero(props) {
                   <source src={'/OrganicBar_optimized.mp4'} type='video/mp4' />
                 </video>
               </div>
-              <div className={css.columnItem} data-number='3' data-sort='17.'>
+              <div className={css.columnItem} data-number='3' data-sort='17.' data-content='Art Direction til billedserie for Twelve inch'>
                 <Image
                   src={TwelveInchFour}
                   layout='fill'

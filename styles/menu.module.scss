@@ -78,9 +78,11 @@
 }
 
 .menuContent {
-  max-width: 55vw;
-  width: calc(100vw - 8vw);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   z-index: 1;
+  width: 100%;
 
   @media (max-width: $sm) {
     max-width: none;
@@ -88,29 +90,37 @@
 }
 
 .menuTitle {
+  display: inline-block;
   font-family: ivypresto-display, serif;
   font-size: clamp(21px, 2vw, 40px);
   font-style: normal;
   font-weight: 300;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 0.5rem;
-  text-align: center;
 }
 
 .list {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 780px;
   padding: 0;
+  width: 100%;
 
   .listItem {
+    display: inline-block;
     font-size: clamp(36px, 5vw, 100px);
     font-weight: 600;
     margin-bottom: 0.5rem;
+    text-align: center;
     text-transform: uppercase;
 
     a {
       display: block;
       line-height: 1;
+      margin: 0 auto;
     }
 
     .linkItem {
@@ -137,27 +147,27 @@
   }
 }
 
-.firstLink {
-  margin-left: 5%;
+#firstLink {
+  transform: translateX(0);
 }
 
-.secondLink {
-  margin-left: 22.5%;
+#secondLink {
+  transform: translateX(12.5vw);
 }
 
-.thirdLink {
-  margin-left: 40%;
+#thirdLink {
+  transform: translateX(25vw);
 }
 
-.fourthLink {
-  margin-left: 10%;
+#fourthLink {
+  transform: translateX(5vw);
 }
 
-.fifthLink {
-  margin-left: 25%;
+#fifthLink {
+  transform: translateX(20vw);
 }
 
-.sixthLink {
+#sixthLink {
   margin-left: 25%;
 }
 

@@ -38,7 +38,7 @@
   letter-spacing: -0.015em;
   margin: 0;
   margin-bottom: 2vw;
-  width: 45vw;
+  width: 52vw;
 
   @media (max-width: $l) {
     font-size: 4vw;
@@ -61,7 +61,7 @@
 .upperTeaser,
 .contentTeaser,
 .brandingTeaser {
-  align-items: center;
+  align-items: flex-end;
   color: var(--light);
   display: flex;
   font-size: var(--teaser);
@@ -69,6 +69,7 @@
   margin-bottom: 1vw;
 
   &::before {
+    align-self: center;
     background-color: var(--light);
     content: '';
     display: inline-block;

@@ -31,8 +31,9 @@
   align-items: flex-start;
   display: flex;
   color: var(--sand);
-  font-size: clamp(21px, 1.75vw, 42px);
-  font-weight: 600;
+  font-size: clamp(21px, 1.5vw, 42px);
+  letter-spacing: -0.01em;
+  font-weight: 500;
   line-height: 1;
 
   .logoType {
@@ -72,6 +73,10 @@
   font-size: var(--fontSize);
   margin-right: 2vw;
   cursor: pointer;
+
+  @media (max-width: $sm) {
+    display: none;
+  }
 }
 
 .menuActivator {

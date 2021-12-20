@@ -74,39 +74,39 @@ export default function Menu() {
           <div className={css.menuContent} ref={menuItems}>
             <h2 className={css.menuTitle}>Gå på opdagelse i vores</h2>
             <ul className={css.list}>
-              <li className={css.listItem}>
+              <li className={css.listItem} id={css.firstLink}>
                 <Link href='/'>
-                  <a className={css.firstLink} onClick={toggleFunction}>
+                  <a onClick={toggleFunction}>
                     <div className={router.pathname == '/' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>01.</span>
-                      Hverdag
+                      Opgaver
                     </div>
                   </a>
                 </Link>
               </li>
-              <li className={css.listItem}>
+              <li className={css.listItem} id={css.secondLink}>
                 <Link href='#ydelser'>
-                  <a className={css.secondLink} onClick={toggleFunction}>
+                  <a onClick={toggleFunction}>
                     <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>02.</span>
-                      Produkter
-                    </div>
-                  </a>
-                </Link>
-              </li>
-              <li className={css.listItem}>
-                <Link href='/'>
-                  <a className={css.thirdLink} onClick={toggleFunction}>
-                    <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
-                      <span className={css.linkNumber}>03.</span>
                       Ydelser
                     </div>
                   </a>
                 </Link>
               </li>
-              <li className={css.listItem}>
+              <li className={css.listItem} id={css.thirdLink}>
                 <Link href='/'>
-                  <a className={css.fourthLink} onClick={toggleFunction}>
+                  <a onClick={toggleFunction}>
+                    <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
+                      <span className={css.linkNumber}>03.</span>
+                      Produkter
+                    </div>
+                  </a>
+                </Link>
+              </li>
+              <li className={css.listItem} id={css.fourthLink}>
+                <Link href='/'>
+                  <a onClick={toggleFunction}>
                     <div className={router.pathname == '/cases' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>04.</span>
                       Referencer
@@ -114,9 +114,9 @@ export default function Menu() {
                   </a>
                 </Link>
               </li>
-              <li className={css.listItem}>
+              <li className={css.listItem} id={css.fifthLink}>
                 <Link href='/'>
-                  <a className={css.sixthLink} onClick={toggleFunction}>
+                  <a onClick={toggleFunction}>
                     <div className={router.pathname == '/kontakt' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>eller</span>
                       Kontakt os
