@@ -53,7 +53,7 @@ export default function Hero(props) {
         </div>
 
         <div className={css.heroMiddle}>
-          <div className={css.middleTitle}><span>Nyeste</span><span className='ivyPrestoItalic'>opgaver</span></div>
+          <div className={css.middleTitle}><span>Udvalgte<span className='ivyPrestoItalic'>opgaver</span></span></div>
           <div className={css.middleInner}>
             <div className={css.columnOne}>
               <div className={css.columnItem} data-number='1' data-sort='01.' data-content='Art Direction for Tinekhome'>

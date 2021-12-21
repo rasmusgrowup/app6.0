@@ -1,7 +1,7 @@
 import Hero from '../components/Hero'
-import Os from '../components/Os'
 import Products from '../components/Products'
 import References from '../components/References'
+import Oversigt from '../components/Oversigt'
 import Logo from '../components/Logo'
 import css from '../styles/intro.module.scss'
 

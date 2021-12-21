@@ -99,7 +99,7 @@ export default function Menu() {
                   <a onClick={toggleFunction}>
                     <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
                       <span className={css.linkNumber}>03.</span>
-                      Produkter
+                      Løsninger
                     </div>
                   </a>
                 </Link>

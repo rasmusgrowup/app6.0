@@ -9,7 +9,8 @@ export default function Logo() {
     <>
       <Link href='/'>
         <a className={css.logo}>
-          <span className={css.logoType}>Growup Studio</span>
+          <span className={css.logoType}>Growup</span>
+          <span className={css.logoStudio}>Studio</span>
           <span className={css.logoArrowWrapper}><Image src={Arrow} className={css.logoArrow} layout='responsive'/></span>
         </a>
       </Link>
