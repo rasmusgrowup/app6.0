@@ -94,7 +94,7 @@ export default function Menu() {
                   </a>
                 </Link>
               </li>
-              <li className={css.listItem} id={css.thirdLink}>
+              <li className={css.listItem} id={css.thirdLink} style={{ display: 'none' }}>
                 <Link href='/'>
                   <a onClick={toggleFunction}>
                     <div className={router.pathname == '/loesninger' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
@@ -108,7 +108,7 @@ export default function Menu() {
                 <Link href='/'>
                   <a onClick={toggleFunction}>
                     <div className={router.pathname == '/cases' ? `${css.linkItem} ${css.activeLinkItem}` : `${css.linkItem}`}>
-                      <span className={css.linkNumber}>04.</span>
+                      <span className={css.linkNumber}>03.</span>
                       Referencer
                     </div>
                   </a>

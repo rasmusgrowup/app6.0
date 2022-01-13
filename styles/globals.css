@@ -69,6 +69,7 @@ p {
   --red: #fa233b;
   --dark: rgb(12, 13, 14);
   --dark: rgb(9, 14, 20);
+  --dark: rgb(0, 7, 15);
   --lightSand: #f0efea;
   --light: rgb(255, 250, 242);
   --lightGrey: #f8f8f8;
@@ -78,6 +79,7 @@ p {
   --toppadding: 4vw;
   --padding: 4vw;
   --ease: cubic-bezier(0.85, 0, 0.15, 1);
-  --fontSize: clamp(1.1em, 1.4vw, 36px);
+  --fontSize: clamp(1.05em, 1.4vw, 36px);
   --teaser: clamp(1.2em, 1.5vw, 42px);
+  --maxWidth: 1740px;
 }

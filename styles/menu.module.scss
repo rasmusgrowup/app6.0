@@ -43,7 +43,7 @@
     background-color: var(--light);
     cursor: pointer;
     display: block;
-    height: 5px;
+    height: 0.4rem;
     left: 0;
     position: absolute;
     top: calc(50% - 0.5rem);
@@ -101,7 +101,7 @@
 }
 
 .list {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -112,11 +112,19 @@
 
   .listItem {
     display: inline-block;
-    font-size: clamp(36px, 5vw, 100px);
+    font-size: clamp(36px, 5vw, 10rem);
     font-weight: 600;
     margin-bottom: 0.5rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media (max-width: $l) {
+      font-size: 8vw;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 10vw;
+    }
 
     a {
       display: block;
@@ -149,23 +157,43 @@
 }
 
 #firstLink {
-  transform: translateX(0);
+  transform: translateX(-14vw);
+
+  @media (max-width: $l) {
+    transform: translateX(-20vw);
+  }
 }
 
 #secondLink {
-  transform: translateX(12.5vw);
+  transform: translateX(-4vw);
+
+  @media (max-width: $l) {
+    transform: translateX(-10vw);
+  }
 }
 
 #thirdLink {
-  transform: translateX(25vw);
+  transform: translateX(4vw);
+
+  @media (max-width: $l) {
+    transform: translateX(-20vw);
+  }
 }
 
 #fourthLink {
-  transform: translateX(5vw);
+  transform: translateX(12vw);
+
+  @media (max-width: $l) {
+    transform: translateX(10vw);
+  }
 }
 
 #fifthLink {
-  transform: translateX(20vw);
+  transform: translateX(0);
+
+  @media (max-width: $l) {
+    transform: translateX(-5vw);
+  }
 }
 
 #sixthLink {

@@ -40,11 +40,6 @@ const data = [
     mediaUrl: '/karensbord.jpg',
   },
   {
-    title: 'Kirstine Mengel',
-    year: '2022',
-    mediaUrl: '/kirstine.jpg',
-  },
-  {
     title: 'Kolonihaverne',
     year: '2021',
     mediaUrl: '/kolo.jpg',

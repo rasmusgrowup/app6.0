@@ -1,4 +1,4 @@
-import css from '../styles/products.module.scss'
+import css from '../styles/ydelser.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -16,7 +16,7 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
-export default function Products() {
+export default function Ydelser() {
   const caseRef = useRef();
   const brandingRef = useRef();
   const contentRef = useRef();
@@ -68,7 +68,7 @@ export default function Products() {
 
   return (
     <>
-      <section className={css.productsSection} ref={section}>
+      <section className={css.ydelserSection} ref={section}>
         <div ref={inner} className={css.inner}>
           <div className={css.upper}>
             <div className={css.upperTeaser}><span>Vores<span className='ivyPrestoItalic'>ydelser</span></span></div>

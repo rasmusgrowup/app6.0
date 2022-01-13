@@ -26,12 +26,14 @@ const useMousePosition = () => {
 export default function References() {
   const [activeIndex, setActiveIndex] = useState(-1);
   const {x, y} = useMousePosition();
-  const sectionRef = useRef();
+  const sectionRef = useRef(null);
+  const innerRef = useRef();
   gsap.registerPlugin(ScrollTrigger);
+  console.log({x, y});
 
   useEffect(() => {
     ScrollTrigger.create({
-      trigger: sectionRef.current,
+      trigger: innerRef.current,
       start: 'top bottom',
       end: 'bottom top',
       onEnter: ()=>setActiveIndex(-1),
@@ -43,8 +45,8 @@ export default function References() {
 
   return (
     <>
-      <section className={css.referencesSection} id='referencer'>
-        <div className={css.inner} ref={sectionRef}>
+      <section className={css.referencesSection} id='referencer' ref={sectionRef}>
+        <div className={css.inner} ref={innerRef}>
           <div className={css.upperTeaser}>Vores<span className='ivyPrestoItalic'>referencer</span></div>
           <div className={css.titleList}>
             {images.map(({title, year}, index) => (

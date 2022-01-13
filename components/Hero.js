@@ -29,7 +29,7 @@ export default function Hero(props) {
       <section className={css.heroSection}>
         <div className={css.heroTop}>
           <h1 className={css.heading}>
-            Kreatører af <span className='ivyPrestoItalic'>fantastiske</span> hjemmesider og webshops, mestre af Shopify, SoMe og SEO, samt kæmpe fans af <span className='ivyPrestoItalic'>opfindsom</span> branding
+            Kreatører af <span className='ivyPrestoItalic'>fantastiske</span> hjemmesider og webshops, mestre af SEO, SoMe og Shopify, samt kæmpe fans af <span className='ivyPrestoItalic'>opfindsom</span> branding
           </h1>
           <div className={css.aside}>
             <div className={css.text}>

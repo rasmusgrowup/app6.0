@@ -1,5 +1,5 @@
 import Hero from '../components/Hero'
-import Products from '../components/Products'
+import Ydelser from '../components/Ydelser'
 import References from '../components/References'
 import Oversigt from '../components/Oversigt'
 import Logo from '../components/Logo'
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
       <Hero />
-      <Products />
+      <Ydelser />
       <References />
     </>
   )

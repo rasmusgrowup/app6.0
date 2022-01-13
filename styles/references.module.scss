@@ -3,7 +3,7 @@
 .referencesSection {
   align-items: flex-start;
   background-color: var(--dark);
-  color: var(--light);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
 
 .upperTeaser {
   align-items: flex-end;
-  color: var(--light);
+  color: var(--white);
   display: flex;
   font-size: var(--teaser);
   font-weight: 300 !important;
@@ -27,7 +27,7 @@
 
   &::before {
     align-self: center;
-    background-color: var(--light);
+    background-color: var(--white);
     content: '';
     display: inline-block;
     height: 1px;
